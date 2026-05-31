@@ -95,7 +95,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("https://api.football-data.org/v4/competitions/WC/matches", {
+    fetch("/api/v4/competitions/WC/matches", {
       headers: {
         "X-Auth-Token": import.meta.env.VITE_API_KEY,
       },
