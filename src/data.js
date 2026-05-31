@@ -14,7 +14,7 @@ export const players = [
   { id: 13, name: "Ida", points: 0 },
   { id: 14, name: "Ida", points: 0 },
   { id: 15, name: "Viktor", points: 0 },
-  { id: 16, name: "Viktor", points: 0 },
+  { id: 16, name: "Mark", points: 0 },
   { id: 17, name: "Nils", points: 0 },
   { id: 18, name: "Nils", points: 0 },
   { id: 19, name: "Sandra", points: 0 },
@@ -94,7 +94,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -200,7 +200,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -306,7 +306,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -412,7 +412,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -518,7 +518,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -624,7 +624,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -730,7 +730,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -836,7 +836,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -942,7 +942,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1048,7 +1048,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1154,7 +1154,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1260,7 +1260,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1366,7 +1366,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1472,7 +1472,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1578,7 +1578,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1684,7 +1684,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1790,7 +1790,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -1896,7 +1896,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2002,7 +2002,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2108,7 +2108,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2214,7 +2214,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2320,7 +2320,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2426,7 +2426,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2532,7 +2532,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2638,7 +2638,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2744,7 +2744,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2850,7 +2850,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -2956,7 +2956,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3062,7 +3062,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3168,7 +3168,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3274,7 +3274,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3380,7 +3380,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3486,7 +3486,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3592,7 +3592,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3698,7 +3698,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3804,7 +3804,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -3910,7 +3910,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4016,7 +4016,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4122,7 +4122,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4228,7 +4228,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4334,7 +4334,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4440,7 +4440,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4546,7 +4546,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4652,7 +4652,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4758,7 +4758,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4864,7 +4864,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -4970,7 +4970,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5076,7 +5076,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5182,7 +5182,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5288,7 +5288,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5394,7 +5394,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5500,7 +5500,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5606,7 +5606,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5712,7 +5712,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5818,7 +5818,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -5924,7 +5924,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6030,7 +6030,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6136,7 +6136,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6242,7 +6242,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6348,7 +6348,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6454,7 +6454,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6560,7 +6560,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6666,7 +6666,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6772,7 +6772,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6878,7 +6878,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -6984,7 +6984,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -7090,7 +7090,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -7196,7 +7196,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -7302,7 +7302,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -7408,7 +7408,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -7514,7 +7514,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },
@@ -7620,7 +7620,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Viktor kompis": {
+      Mark: {
         home: 1,
         away: 1,
       },

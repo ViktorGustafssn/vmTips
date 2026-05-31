@@ -138,7 +138,7 @@ function App() {
         <Matches players={playersWithPoints} matches={liveMatches} />
       ) : null}
       {activeTab === "deltagare" ? (
-        <Participants players={playersWithPoints} />
+        <Participants players={playersWithPoints} matches={liveMatches} />
       ) : null}
     </>
   );
