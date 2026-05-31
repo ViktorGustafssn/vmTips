@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Toplist from "./Toplist.jsx";
 import Navbar from "./Navbar.jsx";
+import Home from "./Home.jsx";
 import Matches from "./Matches.jsx";
 import Participants from "./Participants.jsx";
 import { players, matches, predictions } from "./data.js";
 import { bonusResults } from "./results.js";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("topplista");
+  const [activeTab, setActiveTab] = useState("hem");
   const [liveMatches, setLiveMatches] = useState([]);
   const [playersWithPoints, setPlayersWithPoints] = useState([]);
 
@@ -131,6 +132,7 @@ function App() {
   return (
     <>
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      {activeTab === "hem" ? <Home /> : null}
       {activeTab === "topplista" ? (
         <Toplist players={playersWithPoints} />
       ) : null}

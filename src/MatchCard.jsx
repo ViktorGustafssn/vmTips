@@ -3,12 +3,22 @@ import { useState } from "react";
 function MatchCard(props) {
   const [showTips, setShowTip] = useState(false);
 
+  console.log(props.match.homeTeam);
+
   const dateObj = new Date(props.match.utcDate);
   const date = dateObj.toLocaleDateString("sv-SE");
   const time = dateObj.toLocaleTimeString("sv-SE", {
     hour: "2-digit",
     minute: "2-digit",
   });
+
+  const statusLabel = {
+    TIMED: null,
+    SCHEDULED: null,
+    IN_PLAY: "Live 🔴",
+    FINISHED: "Slutresultat",
+    PAUSED: "Paus",
+  }[props.match.status];
 
   return (
     <li
@@ -21,13 +31,20 @@ function MatchCard(props) {
       <div className="grid grid-cols-3 place-items-center w-full">
         {" "}
         {/* Hemma lag */}
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center items-center gap-1">
+          <img
+            src={props.match.homeTeam.crest}
+            alt={props.match.homeTeam.name}
+            className="w-8 h-8"
+          />
           <p className="font-semibold">{props.match.homeTeam.name}</p>
         </div>
         {/* {Resultat kolumnen} */}
         <div className="flex flex-col items-center justify-center gap-2">
           <div>
-            <p>Live</p>
+            {statusLabel && (
+              <p className="text-xs text-gray-400">{statusLabel}</p>
+            )}
           </div>
           <div className=" flex-1 flex items-center justify-center text-3xl gap-6">
             <p>
@@ -43,11 +60,18 @@ function MatchCard(props) {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <p className="">94:10</p>
+            {props.match.status === "IN_PLAY" && (
+              <p className="text-xs">{props.match.minute}</p>
+            )}
           </div>
         </div>
         {/* Borta lag */}
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center items-center gap-1">
+          <img
+            src={props.match.awayTeam.crest}
+            alt={props.match.awayTeam.name}
+            className="w-8 h-8"
+          />
           <p className="font-semibold">{props.match.awayTeam.name}</p>
         </div>
       </div>
