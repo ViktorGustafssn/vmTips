@@ -73,9 +73,9 @@ function Comments() {
       </button>
       {comments.map((comment, index) => (
         <div key={index} className="border-b border-gray-700 pb-4">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <p className="font-bold">{comment.name}</p>
-            <p className="text-sm text-gray-400">
+            <p className="text-xs text-gray-400">
               {new Date(comment.date).toLocaleString("sv-SE")}
             </p>
           </div>

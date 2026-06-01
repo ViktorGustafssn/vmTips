@@ -115,6 +115,15 @@ function App() {
 
         setLiveMatches(matchesWithTips);
 
+        // TEMPORÄRT TEST - ta bort sen!
+        matchesWithTips[0].score.fullTime.home = 2;
+        matchesWithTips[0].score.fullTime.away = 1;
+        matchesWithTips[0].status = "FINISHED";
+
+        matchesWithTips[1].score.fullTime.home = 3;
+        matchesWithTips[1].score.fullTime.away = 1;
+        matchesWithTips[1].status = "FINISHED";
+
         // Räkna poäng här, när matchesWithTips är klar
         const calculated = players
           .map((player) => ({

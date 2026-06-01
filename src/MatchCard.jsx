@@ -84,18 +84,18 @@ function MatchCard(props) {
                     ? "border-[#3a3a3a]"
                     : props.match.score.fullTime.home >
                           props.match.score.fullTime.away &&
-                        props.match.tips[player.name].home >
-                          props.match.tips[player.name].away
+                        props.match.tips?.[player.name]?.home >
+                          props.match.tips?.[player.name]?.away
                       ? "border-green-500"
                       : props.match.score.fullTime.home <
                             props.match.score.fullTime.away &&
-                          props.match.tips[player.name].home <
-                            props.match.tips[player.name].away
+                          props.match.tips?.[player.name]?.home <
+                            props.match.tips?.[player.name]?.away
                         ? "border-green-500"
                         : props.match.score.fullTime.home ===
                               props.match.score.fullTime.away &&
-                            props.match.tips[player.name].home ===
-                              props.match.tips[player.name].away
+                            props.match.tips?.[player.name]?.home ===
+                              props.match.tips?.[player.name]?.away
                           ? "border-green-500"
                           : "border-red-500"
                 } flex flex-col items-center justify-center py-1 w-25 border border-[#3a3a3a] bg-[#2a2a2a] rounded-lg`}

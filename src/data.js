@@ -1,18 +1,18 @@
 export const players = [
   { id: 1, name: "Bertil", points: 0 },
-  { id: 2, name: "Bertil", points: 0 },
+  { id: 2, name: "Berra", points: 0 },
   { id: 3, name: "Eva A", points: 0 },
-  { id: 4, name: "Eva A", points: 0 },
+  { id: 4, name: "Eva A kompis", points: 0 },
   { id: 5, name: "Petter", points: 0 },
-  { id: 6, name: "Petter", points: 0 },
+  { id: 6, name: "Petter E", points: 0 },
   { id: 7, name: "Anna", points: 0 },
-  { id: 8, name: "Anna", points: 0 },
+  { id: 8, name: "Anna kompis", points: 0 },
   { id: 9, name: "Per", points: 0 },
   { id: 10, name: "Peter", points: 0 },
   { id: 11, name: "Eva E", points: 0 },
   { id: 12, name: "Anders", points: 0 },
   { id: 13, name: "Ida", points: 0 },
-  { id: 14, name: "Ida", points: 0 },
+  { id: 14, name: "Ida kompis", points: 0 },
   { id: 15, name: "Viktor", points: 0 },
   { id: 16, name: "Mark", points: 0 },
   { id: 17, name: "Nils", points: 0 },
@@ -20,9 +20,9 @@ export const players = [
   { id: 19, name: "Sandra", points: 0 },
   { id: 20, name: "Johan S", points: 0 },
   { id: 21, name: "Jimmy", points: 0 },
-  { id: 22, name: "Jimmy", points: 0 },
+  { id: 22, name: "Jimmy kompis", points: 0 },
   { id: 23, name: "Andrew", points: 0 },
-  { id: 24, name: "Andrew", points: 0 },
+  { id: 24, name: "Andrew kompis", points: 0 },
 ];
 
 export const matches = [
@@ -34,102 +34,30 @@ export const matches = [
     group: "A",
     result: null,
     tips: {
-      Bertil: {
-        home: 1,
-        away: 1,
-      },
-      "Bertil kompis": {
-        home: 1,
-        away: 1,
-      },
-      "Eva A": {
-        home: 1,
-        away: 1,
-      },
-      "Eva A kompis": {
-        home: 1,
-        away: 1,
-      },
-      Petter: {
-        home: 1,
-        away: 1,
-      },
-      "Petter kompis": {
-        home: 1,
-        away: 1,
-      },
-      Anna: {
-        home: 1,
-        away: 1,
-      },
-      "Anna kompis": {
-        home: 1,
-        away: 1,
-      },
-      Per: {
-        home: 1,
-        away: 1,
-      },
-      Peter: {
-        home: 1,
-        away: 1,
-      },
-      "Eva E": {
-        home: 1,
-        away: 1,
-      },
-      Anders: {
-        home: 1,
-        away: 1,
-      },
-      Ida: {
-        home: 1,
-        away: 1,
-      },
-      "Ida kompis": {
-        home: 1,
-        away: 1,
-      },
-      Viktor: {
-        home: 1,
-        away: 1,
-      },
-      Mark: {
-        home: 1,
-        away: 1,
-      },
-      Nils: {
-        home: 1,
-        away: 1,
-      },
-      "Johan W": {
-        home: 1,
-        away: 1,
-      },
-      Sandra: {
-        home: 1,
-        away: 1,
-      },
-      "Johan S": {
-        home: 1,
-        away: 1,
-      },
-      Jimmy: {
-        home: 1,
-        away: 1,
-      },
-      "Jimmy kompis": {
-        home: 1,
-        away: 1,
-      },
-      Andrew: {
-        home: 1,
-        away: 1,
-      },
-      "Andrew kompis": {
-        home: 1,
-        away: 1,
-      },
+      Bertil: { home: 2, away: 1 },
+      Berra: { home: 3, away: 1 },
+      "Eva A": { home: 1, away: 2 },
+      "Eva A kompis": { home: 3, away: 0 },
+      Petter: { home: 1, away: 3 },
+      "Petter E": { home: 2, away: 2 },
+      Anna: { home: 3, away: 2 },
+      "Anna kompis": { home: 1, away: 1 },
+      Per: { home: 2, away: 0 },
+      Peter: { home: 3, away: 1 },
+      "Eva E": { home: 0, away: 2 },
+      Anders: { home: 1, away: 1 },
+      Ida: { home: 2, away: 1 },
+      "Ida kompis": { home: 3, away: 3 },
+      Viktor: { home: 1, away: 0 },
+      Mark: { home: 3, away: 1 },
+      Nils: { home: 2, away: 2 },
+      "Johan W": { home: 1, away: 2 },
+      Sandra: { home: 3, away: 0 },
+      "Johan S": { home: 0, away: 1 },
+      Jimmy: { home: 2, away: 1 },
+      "Jimmy kompis": { home: 1, away: 3 },
+      Andrew: { home: 3, away: 2 },
+      "Andrew kompis": { home: 2, away: 0 },
     },
   },
   {
@@ -140,102 +68,30 @@ export const matches = [
     group: "A",
     result: null,
     tips: {
-      Bertil: {
-        home: 1,
-        away: 1,
-      },
-      "Bertil kompis": {
-        home: 1,
-        away: 1,
-      },
-      "Eva A": {
-        home: 1,
-        away: 1,
-      },
-      "Eva A kompis": {
-        home: 1,
-        away: 1,
-      },
-      Petter: {
-        home: 1,
-        away: 1,
-      },
-      "Petter kompis": {
-        home: 1,
-        away: 1,
-      },
-      Anna: {
-        home: 1,
-        away: 1,
-      },
-      "Anna kompis": {
-        home: 1,
-        away: 1,
-      },
-      Per: {
-        home: 1,
-        away: 1,
-      },
-      Peter: {
-        home: 1,
-        away: 1,
-      },
-      "Eva E": {
-        home: 1,
-        away: 1,
-      },
-      Anders: {
-        home: 1,
-        away: 1,
-      },
-      Ida: {
-        home: 1,
-        away: 1,
-      },
-      "Ida kompis": {
-        home: 1,
-        away: 1,
-      },
-      Viktor: {
-        home: 1,
-        away: 1,
-      },
-      Mark: {
-        home: 1,
-        away: 1,
-      },
-      Nils: {
-        home: 1,
-        away: 1,
-      },
-      "Johan W": {
-        home: 1,
-        away: 1,
-      },
-      Sandra: {
-        home: 1,
-        away: 1,
-      },
-      "Johan S": {
-        home: 1,
-        away: 1,
-      },
-      Jimmy: {
-        home: 1,
-        away: 1,
-      },
-      "Jimmy kompis": {
-        home: 1,
-        away: 1,
-      },
-      Andrew: {
-        home: 1,
-        away: 1,
-      },
-      "Andrew kompis": {
-        home: 1,
-        away: 1,
-      },
+      Bertil: { home: 0, away: 2 },
+      Berra: { home: 1, away: 1 },
+      "Eva A": { home: 2, away: 1 },
+      "Eva A kompis": { home: 0, away: 3 },
+      Petter: { home: 1, away: 2 },
+      "Petter E": { home: 0, away: 1 },
+      Anna: { home: 2, away: 2 },
+      "Anna kompis": { home: 1, away: 2 },
+      Per: { home: 0, away: 2 },
+      Peter: { home: 1, away: 0 },
+      "Eva E": { home: 2, away: 3 },
+      Anders: { home: 0, away: 2 },
+      Ida: { home: 1, away: 1 },
+      "Ida kompis": { home: 0, away: 3 },
+      Viktor: { home: 1, away: 2 },
+      Mark: { home: 2, away: 1 },
+      Nils: { home: 0, away: 2 },
+      "Johan W": { home: 1, away: 3 },
+      Sandra: { home: 2, away: 2 },
+      "Johan S": { home: 1, away: 2 },
+      Jimmy: { home: 0, away: 1 },
+      "Jimmy kompis": { home: 1, away: 2 },
+      Andrew: { home: 2, away: 0 },
+      "Andrew kompis": { home: 0, away: 2 },
     },
   },
   {

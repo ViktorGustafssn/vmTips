@@ -24,12 +24,13 @@ function Participants(props) {
 
         if (
           (result.home > result.away && tip.home > tip.away) ||
-          (result.home < result.away && tip.home < tip.home) ||
+          (result.home < result.away && tip.home < tip.away) ||
           (result.home === result.away && tip.home === tip.away)
         )
           rightSign++;
 
-        if (result.home === tip.home || result.away === tip.away) rightGoals++;
+        if (result.home === tip.home) rightGoals++;
+        if (result.away === tip.away) rightGoals++;
 
         if (result.home === tip.home && result.away === tip.away) exact++;
       }
@@ -94,20 +95,63 @@ function Participants(props) {
                     matchesByGroup[group] && (
                       <div key={group}>
                         <p className="font-semibold">Grupp {group}</p>
-                        {matchesByGroup[group].map((match) => (
-                          <div
-                            key={match.id}
-                            className="flex justify-between text-gray-400 text-base"
-                          >
-                            <p>
-                              {match.homeTeam.name} - {match.awayTeam.name}
-                            </p>
-                            <p>
-                              {match.tips?.[player.name]?.home ?? "-"} -{" "}
-                              {match.tips?.[player.name]?.away ?? "-"}
-                            </p>
-                          </div>
-                        ))}
+                        {matchesByGroup[group].map((match) => {
+                          const result = match.score?.fullTime;
+                          const tip = match.tips?.[player.name];
+                          const matchPlayed = result?.home !== null && tip;
+                          const homeCorrect =
+                            matchPlayed && result.home === tip.home;
+                          const awayCorrect =
+                            matchPlayed && result.away === tip.away;
+                          const signCorrect =
+                            matchPlayed &&
+                            ((result.home > result.away &&
+                              tip.home > tip.away) ||
+                              (result.home < result.away &&
+                                tip.home < tip.away) ||
+                              (result.home === result.away &&
+                                tip.home === tip.away));
+
+                          return (
+                            <div
+                              key={match.id}
+                              className="flex justify-between text-base"
+                            >
+                              <p className="text-gray-400">
+                                {match.homeTeam.name} - {match.awayTeam.name}
+                              </p>
+                              <div className="flex gap-1">
+                                <p
+                                  className={
+                                    matchPlayed
+                                      ? homeCorrect
+                                        ? "text-green-500"
+                                        : signCorrect
+                                          ? "text-yellow-400"
+                                          : "text-red-500"
+                                      : "text-gray-400"
+                                  }
+                                >
+                                  {tip?.home ?? "-"}
+                                </p>
+                                <p className="text-gray-400">-</p>
+                                <p
+                                  className={
+                                    matchPlayed
+                                      ? awayCorrect
+                                        ? "text-green-500"
+                                        : signCorrect
+                                          ? "text-yellow-400"
+                                          : "text-red-500"
+                                      : "text-gray-400"
+                                  }
+                                >
+                                  {tip?.away ?? "-"}
+                                </p>
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
                     ),
                 )}
