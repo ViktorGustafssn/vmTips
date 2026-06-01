@@ -132,7 +132,7 @@ function App() {
 
   return (
     <>
-      <div className="">
+      <div className="pb-20">
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
         {activeTab === "hem" ? <Home /> : null}
         {activeTab === "topplista" ? (

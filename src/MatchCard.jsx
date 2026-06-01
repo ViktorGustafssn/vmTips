@@ -3,8 +3,6 @@ import { useState } from "react";
 function MatchCard(props) {
   const [showTips, setShowTip] = useState(false);
 
-  console.log(props.match.homeTeam);
-
   const dateObj = new Date(props.match.utcDate);
   const date = dateObj.toLocaleDateString("sv-SE");
   const time = dateObj.toLocaleTimeString("sv-SE", {

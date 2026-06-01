@@ -8,17 +8,17 @@ export const players = [
   { id: 7, name: "Anna", points: 0 },
   { id: 8, name: "Anna", points: 0 },
   { id: 9, name: "Per", points: 0 },
-  { id: 10, name: "Per", points: 0 },
+  { id: 10, name: "Peter", points: 0 },
   { id: 11, name: "Eva E", points: 0 },
-  { id: 12, name: "Eva E", points: 0 },
+  { id: 12, name: "Anders", points: 0 },
   { id: 13, name: "Ida", points: 0 },
   { id: 14, name: "Ida", points: 0 },
   { id: 15, name: "Viktor", points: 0 },
   { id: 16, name: "Mark", points: 0 },
   { id: 17, name: "Nils", points: 0 },
-  { id: 18, name: "Nils", points: 0 },
+  { id: 18, name: "Johan W", points: 0 },
   { id: 19, name: "Sandra", points: 0 },
-  { id: 20, name: "Sandra", points: 0 },
+  { id: 20, name: "Johan S", points: 0 },
   { id: 21, name: "Jimmy", points: 0 },
   { id: 22, name: "Jimmy", points: 0 },
   { id: 23, name: "Andrew", points: 0 },
@@ -70,7 +70,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -78,7 +78,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -102,7 +102,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -110,7 +110,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -176,7 +176,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -184,7 +184,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -208,7 +208,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -216,7 +216,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -282,7 +282,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -290,7 +290,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -314,7 +314,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -322,7 +322,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -388,7 +388,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -396,7 +396,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -420,7 +420,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -428,7 +428,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -494,7 +494,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -502,7 +502,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -526,7 +526,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -534,7 +534,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -600,7 +600,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -608,7 +608,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -632,7 +632,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -640,7 +640,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -706,7 +706,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -714,7 +714,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -738,7 +738,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -746,7 +746,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -812,7 +812,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -820,7 +820,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -844,7 +844,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -852,7 +852,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -918,7 +918,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -926,7 +926,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -950,7 +950,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -958,7 +958,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1024,7 +1024,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1032,7 +1032,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1056,7 +1056,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1064,7 +1064,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1130,7 +1130,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1138,7 +1138,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1162,7 +1162,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1170,7 +1170,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1236,7 +1236,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1244,7 +1244,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1268,7 +1268,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1276,7 +1276,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1342,7 +1342,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1350,7 +1350,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1374,7 +1374,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1382,7 +1382,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1448,7 +1448,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1456,7 +1456,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1480,7 +1480,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1488,7 +1488,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1554,7 +1554,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1562,7 +1562,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1586,7 +1586,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1594,7 +1594,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1660,7 +1660,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1668,7 +1668,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1692,7 +1692,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1700,7 +1700,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1766,7 +1766,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1774,7 +1774,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1798,7 +1798,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1806,7 +1806,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1872,7 +1872,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1880,7 +1880,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -1904,7 +1904,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -1912,7 +1912,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -1978,7 +1978,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -1986,7 +1986,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2010,7 +2010,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2018,7 +2018,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2084,7 +2084,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2092,7 +2092,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2116,7 +2116,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2124,7 +2124,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2190,7 +2190,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2198,7 +2198,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2222,7 +2222,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2230,7 +2230,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2296,7 +2296,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2304,7 +2304,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2328,7 +2328,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2336,7 +2336,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2402,7 +2402,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2410,7 +2410,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2434,7 +2434,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2442,7 +2442,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2508,7 +2508,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2516,7 +2516,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2540,7 +2540,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2548,7 +2548,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2614,7 +2614,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2622,7 +2622,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2646,7 +2646,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2654,7 +2654,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2720,7 +2720,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2728,7 +2728,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2752,7 +2752,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2760,7 +2760,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2826,7 +2826,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2834,7 +2834,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2858,7 +2858,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2866,7 +2866,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -2932,7 +2932,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -2940,7 +2940,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -2964,7 +2964,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -2972,7 +2972,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3038,7 +3038,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3046,7 +3046,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3070,7 +3070,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3078,7 +3078,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3144,7 +3144,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3152,7 +3152,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3176,7 +3176,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3184,7 +3184,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3250,7 +3250,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3258,7 +3258,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3282,7 +3282,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3290,7 +3290,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3356,7 +3356,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3364,7 +3364,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3388,7 +3388,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3396,7 +3396,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3462,7 +3462,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3470,7 +3470,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3494,7 +3494,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3502,7 +3502,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3568,7 +3568,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3576,7 +3576,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3600,7 +3600,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3608,7 +3608,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3674,7 +3674,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3682,7 +3682,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3706,7 +3706,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3714,7 +3714,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3780,7 +3780,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3788,7 +3788,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3812,7 +3812,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3820,7 +3820,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3886,7 +3886,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -3894,7 +3894,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -3918,7 +3918,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -3926,7 +3926,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -3992,7 +3992,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4000,7 +4000,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4024,7 +4024,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4032,7 +4032,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4098,7 +4098,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4106,7 +4106,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4130,7 +4130,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4138,7 +4138,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4204,7 +4204,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4212,7 +4212,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4236,7 +4236,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4244,7 +4244,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4310,7 +4310,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4318,7 +4318,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4342,7 +4342,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4350,7 +4350,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4416,7 +4416,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4424,7 +4424,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4448,7 +4448,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4456,7 +4456,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4522,7 +4522,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4530,7 +4530,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4554,7 +4554,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4562,7 +4562,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4628,7 +4628,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4636,7 +4636,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4660,7 +4660,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4668,7 +4668,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4734,7 +4734,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4742,7 +4742,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4766,7 +4766,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4774,7 +4774,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4840,7 +4840,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4848,7 +4848,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4872,7 +4872,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4880,7 +4880,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -4946,7 +4946,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -4954,7 +4954,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -4978,7 +4978,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -4986,7 +4986,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5052,7 +5052,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5060,7 +5060,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5084,7 +5084,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5092,7 +5092,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5158,7 +5158,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5166,7 +5166,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5190,7 +5190,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5198,7 +5198,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5264,7 +5264,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5272,7 +5272,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5296,7 +5296,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5304,7 +5304,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5370,7 +5370,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5378,7 +5378,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5402,7 +5402,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5410,7 +5410,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5476,7 +5476,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5484,7 +5484,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5508,7 +5508,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5516,7 +5516,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5582,7 +5582,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5590,7 +5590,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5614,7 +5614,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5622,7 +5622,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5688,7 +5688,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5696,7 +5696,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5720,7 +5720,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5728,7 +5728,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5794,7 +5794,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5802,7 +5802,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5826,7 +5826,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5834,7 +5834,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -5900,7 +5900,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -5908,7 +5908,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -5932,7 +5932,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -5940,7 +5940,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6006,7 +6006,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6014,7 +6014,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6038,7 +6038,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6046,7 +6046,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6112,7 +6112,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6120,7 +6120,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6144,7 +6144,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6152,7 +6152,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6218,7 +6218,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6226,7 +6226,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6250,7 +6250,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6258,7 +6258,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6324,7 +6324,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6332,7 +6332,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6356,7 +6356,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6364,7 +6364,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6430,7 +6430,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6438,7 +6438,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6462,7 +6462,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6470,7 +6470,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6536,7 +6536,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6544,7 +6544,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6568,7 +6568,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6576,7 +6576,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6642,7 +6642,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6650,7 +6650,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6674,7 +6674,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6682,7 +6682,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6748,7 +6748,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6756,7 +6756,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6780,7 +6780,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6788,7 +6788,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6854,7 +6854,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6862,7 +6862,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6886,7 +6886,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -6894,7 +6894,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -6960,7 +6960,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -6968,7 +6968,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -6992,7 +6992,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7000,7 +7000,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -7066,7 +7066,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -7074,7 +7074,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -7098,7 +7098,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7106,7 +7106,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -7172,7 +7172,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -7180,7 +7180,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -7204,7 +7204,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7212,7 +7212,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -7278,7 +7278,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -7286,7 +7286,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -7310,7 +7310,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7318,7 +7318,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -7384,7 +7384,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -7392,7 +7392,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -7416,7 +7416,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7424,7 +7424,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -7490,7 +7490,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -7498,7 +7498,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -7522,7 +7522,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7530,7 +7530,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
@@ -7596,7 +7596,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Per kompis": {
+      Peter: {
         home: 1,
         away: 1,
       },
@@ -7604,7 +7604,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Eva E kompis": {
+      Anders: {
         home: 1,
         away: 1,
       },
@@ -7628,7 +7628,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Nils kompis": {
+      "Johan W": {
         home: 1,
         away: 1,
       },
@@ -7636,7 +7636,7 @@ export const matches = [
         home: 1,
         away: 1,
       },
-      "Sandra kompis": {
+      "Johan S": {
         home: 1,
         away: 1,
       },
