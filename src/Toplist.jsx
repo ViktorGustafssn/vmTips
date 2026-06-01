@@ -1,6 +1,7 @@
 function Toplist(props) {
   return (
     <ol className="flex flex-col gap-2 py-4 font-sans">
+      <h1 className="text-3xl text-center pb-2">Topplista</h1>
       {props.players.map((player, index) => (
         <li
           key={player.id}

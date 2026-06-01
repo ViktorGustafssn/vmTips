@@ -11,6 +11,8 @@ function Matches(props) {
   });
   return (
     <div>
+      <h1 className="text-3xl text-center pb-4">Matcher</h1>
+
       <div className="flex gap-2 justify-center items-center">
         <button
           onClick={() => setActiveFilter("live")}

@@ -40,6 +40,8 @@ function Participants(props) {
 
   return (
     <ol className="flex flex-col px-4 gap-4">
+      <h1 className="text-3xl text-center pb-2">Deltagare</h1>
+
       {props.players.map((player, index) => {
         const stats = getStats(player.name);
         const isExpanded = expandedPlayer === player.id;

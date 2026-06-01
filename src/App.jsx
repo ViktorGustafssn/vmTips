@@ -5,6 +5,7 @@ import Navbar from "./Navbar.jsx";
 import Home from "./Home.jsx";
 import Matches from "./Matches.jsx";
 import Participants from "./Participants.jsx";
+import Comments from "./Comment.jsx";
 import { players, matches, predictions } from "./data.js";
 import { bonusResults } from "./results.js";
 
@@ -131,17 +132,28 @@ function App() {
 
   return (
     <>
-      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-      {activeTab === "hem" ? <Home /> : null}
-      {activeTab === "topplista" ? (
-        <Toplist players={playersWithPoints} />
-      ) : null}
-      {activeTab === "matcher" ? (
-        <Matches players={playersWithPoints} matches={liveMatches} />
-      ) : null}
-      {activeTab === "deltagare" ? (
-        <Participants players={playersWithPoints} matches={liveMatches} />
-      ) : null}
+      <div className="pb-20">
+        <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        {activeTab === "hem" ? <Home /> : null}
+        {activeTab === "topplista" ? (
+          <div className="pt-1">
+            <Toplist players={playersWithPoints} />
+          </div>
+        ) : null}
+        {activeTab === "matcher" ? (
+          <div className="pt-4">
+            <Matches players={playersWithPoints} matches={liveMatches} />
+          </div>
+        ) : null}
+        {activeTab === "deltagare" ? (
+          <div className="pt-4">
+            <Participants players={playersWithPoints} matches={liveMatches} />
+          </div>
+        ) : null}
+        <div className="pt-4">
+          {activeTab === "comments" ? <Comments /> : null}
+        </div>
+      </div>
     </>
   );
 }
