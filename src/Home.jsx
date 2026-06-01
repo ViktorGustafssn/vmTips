@@ -28,15 +28,37 @@ function Home() {
   }, []);
 
   return (
-    <div
-      className="relative h-64 h-screen"
-      style={{
-        backgroundImage: `url(${gyokeres})`,
-        backgroundPosition: "center 5%",
-        backgroundSize: "200%",
-        backgroundRepeat: "no-repeat",
-      }}
-    ></div>
+    <div className="relative h-96 w-full">
+      <img
+        src={gyokeres}
+        alt="gyokeres"
+        className="absolute inset-0 w-full h-full object-cover object-top"
+      />
+      <h1
+        style={{ fontFamily: "Quicksand, sans-serif" }}
+        className="absolute font-bold text-5xl -bottom-3 w-full text-center"
+      >
+        VM-Tips 2026
+      </h1>
+      <p className="absolute -bottom-29 px-14 text-sm leading-relaxed text-gray-400">
+        Här tävlar vi om vem som kan förutspå VM bäst. Följ matcherna live,
+        kolla topplistan och se hur dina tips håller sig!
+      </p>
+      <div className="flex flex-col absolute w-full bg-black/10 items-center">
+        <p className="px-4">Första matchen om</p>
+        <div className="flex gap-2 px-4">
+          {Object.entries(timeLeft).map(([unit, value]) => (
+            <div
+              key={unit}
+              className="flex flex-col items-center rounded-lg p-1 flex-1"
+            >
+              <p className="text-xl font-bold">{value}</p>
+              <p className="text-xs text-gray-400">{unit}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
