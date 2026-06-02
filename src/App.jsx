@@ -21,14 +21,17 @@ function App() {
       if (match.score?.fullTime?.home !== null && match.tips?.[playerName]) {
         const result = match.score.fullTime;
         const tip = match.tips[playerName];
+        const actualSign =
+          result.home > result.away
+            ? "1"
+            : result.home < result.away
+              ? "2"
+              : "X";
+
+        if (tip.sign === actualSign) points += 3;
 
         if (result.home === tip.home) points += 2;
         if (result.away === tip.away) points += 2;
-
-        if (result.home > result.away && tip.home > tip.away) points += 3;
-        else if (result.home < result.away && tip.home < tip.away) points += 3;
-        else if (result.home === result.away && tip.home === tip.away)
-          points += 3;
       }
     });
 
@@ -112,6 +115,10 @@ function App() {
           );
           return { ...apiMatch, tips: localMatch ? localMatch.tips : {} };
         });
+
+        console.log(
+          data.matches.map((m) => m.homeTeam.name + " vs " + m.awayTeam.name),
+        );
 
         setLiveMatches(matchesWithTips);
 

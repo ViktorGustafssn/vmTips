@@ -76,37 +76,81 @@ function MatchCard(props) {
       {showTips && (
         <div>
           <ol className="flex flex-wrap items-center justify-center gap-2 pt-2">
-            {props.players.map((player) => (
-              <li
-                key={player.id}
-                className={`${
-                  props.match.score.fullTime.home === null
-                    ? "border-[#3a3a3a]"
-                    : props.match.score.fullTime.home >
-                          props.match.score.fullTime.away &&
-                        props.match.tips?.[player.name]?.home >
-                          props.match.tips?.[player.name]?.away
-                      ? "border-green-500"
-                      : props.match.score.fullTime.home <
-                            props.match.score.fullTime.away &&
-                          props.match.tips?.[player.name]?.home <
-                            props.match.tips?.[player.name]?.away
+            {props.players.map((player) => {
+              const [firstName, lastName] = player.name
+                ? player.name.split(" ")
+                : [];
+
+              const homeScore =
+                props.match.status === "IN_PLAY"
+                  ? props.match.score.halfTime?.home
+                  : props.match.score.fullTime?.home;
+
+              const awayScore =
+                props.match.status === "IN_PLAY"
+                  ? props.match.score.halfTime?.away
+                  : props.match.score.fullTime?.away;
+
+              const actualSign =
+                homeScore > awayScore ? "1" : homeScore < awayScore ? "2" : "X";
+
+              return (
+                <li
+                  key={player.id}
+                  className={`${
+                    homeScore === null
+                      ? "border-[#3a3a3a]"
+                      : homeScore === props.match.tips?.[player.name]?.home &&
+                          awayScore === props.match.tips?.[player.name]?.away &&
+                          actualSign === props.match.tips?.[player.name]?.sign
                         ? "border-green-500"
-                        : props.match.score.fullTime.home ===
-                              props.match.score.fullTime.away &&
-                            props.match.tips?.[player.name]?.home ===
-                              props.match.tips?.[player.name]?.away
-                          ? "border-green-500"
-                          : "border-red-500"
-                } flex flex-col items-center justify-center py-1 w-25 border border-[#3a3a3a] bg-[#2a2a2a] rounded-lg`}
-              >
-                <p className="text-sm">{player.name}</p>
-                <p className="text-xs">
-                  {props.match.tips[player.name].home} -{" "}
-                  {props.match.tips[player.name].away}
-                </p>
-              </li>
-            ))}
+                        : "border-gray-400"
+                  } flex flex-col items-center justify-center py-1 w-23 border border-[#3a3a3a] bg-[#2a2a2a] rounded-lg`}
+                >
+                  <p className="font-semibold text-sm">
+                    {firstName} {lastName?.slice(0, 1)}
+                  </p>
+                  <div className="flex gap-1">
+                    <div className="flex text-sm gap-[2px] font-semibold">
+                      <p
+                        className={
+                          homeScore === props.match.tips?.[player.name]?.home
+                            ? "text-green-500"
+                            : "text-red-500"
+                        }
+                      >
+                        {props.match.tips?.[player.name]?.home}{" "}
+                      </p>
+                      <p>-</p>
+                      <p
+                        className={
+                          awayScore === props.match.tips?.[player.name]?.away
+                            ? "text-green-500"
+                            : "text-red-500"
+                        }
+                      >
+                        {props.match.tips?.[player.name]?.away}{" "}
+                      </p>
+                    </div>
+                    <div className="flex gap-1 items-center">
+                      <p className="text-[10px] text-gray-400">•</p>
+                      <p
+                        className={`text-sm ${
+                          homeScore === null
+                            ? "text-gray-400"
+                            : actualSign ===
+                                props.match.tips?.[player.name]?.sign
+                              ? "text-green-500"
+                              : "text-red-500"
+                        }`}
+                      >
+                        {props.match.tips?.[player.name]?.sign}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
           </ol>
         </div>
       )}

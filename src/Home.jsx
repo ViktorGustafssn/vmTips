@@ -40,10 +40,10 @@ function Home() {
       >
         VM-Tips 2026
       </h1>
-      {/* <p className="absolute -bottom-29 px-14 text-sm leading-relaxed text-gray-400">
+      <p className="absolute -bottom-34 px-14 text-center leading-relaxed text-gray-300">
         Här tävlar vi om vem som kan förutspå VM bäst. Följ matcherna live,
         kolla topplistan och se hur dina tips håller sig!
-      </p> */}
+      </p>
       <div className="flex flex-col absolute w-full bg-black/10 items-center">
         <p className="px-4 pt-3">Första matchen om</p>
         <div className="flex gap-2 px-4">

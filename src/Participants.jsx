@@ -21,13 +21,14 @@ function Participants(props) {
       if (match.score?.fullTime?.home !== null && match.tips?.[playerName]) {
         const result = match.score.fullTime;
         const tip = match.tips[playerName];
+        const actualSign =
+          result.home > result.away
+            ? "1"
+            : result.home < result.away
+              ? "2"
+              : "X";
 
-        if (
-          (result.home > result.away && tip.home > tip.away) ||
-          (result.home < result.away && tip.home < tip.away) ||
-          (result.home === result.away && tip.home === tip.away)
-        )
-          rightSign++;
+        if (tip.sign === actualSign) rightSign++;
 
         if (result.home === tip.home) rightGoals++;
         if (result.away === tip.away) rightGoals++;
@@ -103,14 +104,12 @@ function Participants(props) {
                             matchPlayed && result.home === tip.home;
                           const awayCorrect =
                             matchPlayed && result.away === tip.away;
-                          const signCorrect =
-                            matchPlayed &&
-                            ((result.home > result.away &&
-                              tip.home > tip.away) ||
-                              (result.home < result.away &&
-                                tip.home < tip.away) ||
-                              (result.home === result.away &&
-                                tip.home === tip.away));
+                          const actualSign =
+                            result?.home > result?.away
+                              ? "1"
+                              : result?.home < result?.away
+                                ? "2"
+                                : "X";
 
                           return (
                             <div
@@ -120,34 +119,47 @@ function Participants(props) {
                               <p className="text-gray-400">
                                 {match.homeTeam.name} - {match.awayTeam.name}
                               </p>
-                              <div className="flex gap-1">
-                                <p
-                                  className={
-                                    matchPlayed
-                                      ? homeCorrect
-                                        ? "text-green-500"
-                                        : signCorrect
-                                          ? "text-yellow-400"
+                              <div className="flex gap-2 justify-center items-center">
+                                <div className="flex items-center justify-center gap-1">
+                                  <p
+                                    className={
+                                      matchPlayed
+                                        ? homeCorrect
+                                          ? "text-green-500"
                                           : "text-red-500"
-                                      : "text-gray-400"
-                                  }
-                                >
-                                  {tip?.home ?? "-"}
-                                </p>
-                                <p className="text-gray-400">-</p>
-                                <p
-                                  className={
-                                    matchPlayed
-                                      ? awayCorrect
-                                        ? "text-green-500"
-                                        : signCorrect
-                                          ? "text-yellow-400"
+                                        : "text-gray-400"
+                                    }
+                                  >
+                                    {tip?.home ?? "-"}
+                                  </p>
+                                  <p className="text-gray-400">-</p>
+                                  <p
+                                    className={
+                                      matchPlayed
+                                        ? awayCorrect
+                                          ? "text-green-500"
                                           : "text-red-500"
-                                      : "text-gray-400"
-                                  }
-                                >
-                                  {tip?.away ?? "-"}
-                                </p>
+                                        : "text-gray-400"
+                                    }
+                                  >
+                                    {tip?.away ?? "-"}
+                                  </p>
+                                </div>
+
+                                <div className="flex gap-2 items-center justify-center">
+                                  <p className="text-xs text-gray-400">•</p>
+                                  <p
+                                    className={
+                                      matchPlayed
+                                        ? actualSign === tip.sign
+                                          ? "text-green-500"
+                                          : "text-red-500"
+                                        : "text-gray-400"
+                                    }
+                                  >
+                                    {tip?.sign ?? "-"}
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           );
