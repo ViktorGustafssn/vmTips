@@ -13,10 +13,19 @@ function MatchCard(props) {
   const statusLabel = {
     TIMED: null,
     SCHEDULED: null,
-    IN_PLAY: "Live 🔴",
+    LIVE: "Live",
+    IN_PLAY: "Live",
     FINISHED: "Slutresultat",
     PAUSED: "Paus",
+    POSTPONED: "Uppskjuten",
+    SUSPENDED: "Avbruten",
+    CANCELLED: "Inställd",
   }[props.match.status];
+
+  const isLive =
+    props.match.status === "LIVE" ||
+    props.match.status === "IN_PLAY" ||
+    props.match.status === "PAUSED";
 
   return (
     <li
@@ -38,29 +47,19 @@ function MatchCard(props) {
           <p className="font-semibold">{props.match.homeTeam.name}</p>
         </div>
         {/* {Resultat kolumnen} */}
-        <div className="flex flex-col items-center justify-center gap-2">
+        <div className="flex flex-col items-center justify-center gap-4">
           <div>
             {statusLabel && (
               <p className="text-xs text-gray-400">{statusLabel}</p>
             )}
           </div>
-          <div className=" flex-1 flex items-center justify-center text-3xl gap-6">
-            <p>
-              {props.match.score.fullTime.home
-                ? props.match.score.fullTime.home
-                : "-"}
-            </p>
+          <div className=" flex-1 flex items-center justify-center text-3xl gap-4">
+            <p>{props.match.score.fullTime?.home ?? "-"}</p>
             <p>-</p>
-            <p>
-              {props.match.score.fullTime.away
-                ? props.match.score.fullTime.away
-                : "-"}
-            </p>
+            <p>{props.match.score.fullTime?.away ?? "-"}</p>
           </div>
           <div className="flex items-center justify-center">
-            {props.match.status === "IN_PLAY" && (
-              <p className="text-xs">{props.match.minute}</p>
-            )}
+            {isLive && <p className="text-xs">{props.match.minute}</p>}
           </div>
         </div>
         {/* Borta lag */}
@@ -81,15 +80,8 @@ function MatchCard(props) {
                 ? player.name.split(" ")
                 : [];
 
-              const homeScore =
-                props.match.status === "IN_PLAY"
-                  ? props.match.score.halfTime?.home
-                  : props.match.score.fullTime?.home;
-
-              const awayScore =
-                props.match.status === "IN_PLAY"
-                  ? props.match.score.halfTime?.away
-                  : props.match.score.fullTime?.away;
+              const homeScore = props.match.score.fullTime?.home;
+              const awayScore = props.match.score.fullTime?.away;
 
               const actualSign =
                 homeScore > awayScore ? "1" : homeScore < awayScore ? "2" : "X";

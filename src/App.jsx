@@ -116,16 +116,12 @@ function App() {
           return { ...apiMatch, tips: localMatch ? localMatch.tips : {} };
         });
 
-        console.log(
-          data.matches.map((m) => m.homeTeam.name + " vs " + m.awayTeam.name),
-        );
-
         setLiveMatches(matchesWithTips);
 
         // TEMPORÄRT TEST - ta bort sen!
         matchesWithTips[0].score.fullTime.home = 2;
         matchesWithTips[0].score.fullTime.away = 1;
-        matchesWithTips[0].status = "FINISHED";
+        matchesWithTips[0].status = "LIVE";
 
         matchesWithTips[1].score.fullTime.home = 3;
         matchesWithTips[1].score.fullTime.away = 1;
