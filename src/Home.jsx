@@ -76,6 +76,9 @@ function Home() {
           ))}
         </div>
       </div>
+      <p className="-bottom-55 left-1/2 -translate-x-1/2 text-xs text-gray-600 absolute">
+        © Kitte Spel & Dobbel
+      </p>
     </div>
   );
 }
