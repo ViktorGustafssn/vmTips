@@ -46,37 +46,41 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative h-96 w-full">
-      <img
-        src={gyokeres}
-        alt="gyokeres"
-        className="absolute inset-0 w-full h-full object-cover object-top"
-      />
-      <h1
-        style={{ fontFamily: "Quicksand, sans-serif" }}
-        className="absolute font-bold text-5xl -bottom-3 w-full text-center"
-      >
-        VM-Tips 2026
-      </h1>
-      <p className="absolute -bottom-34 px-14 text-center leading-relaxed text-gray-300">
-        Här tävlar vi om vem som kan förutspå VM bäst. Följ matcherna live,
-        kolla topplistan och se hur dina tips håller sig!
-      </p>
-      <div className="flex flex-col absolute w-full bg-black/10 items-center">
-        <p className="px-4 pt-3">{countdownLabel}</p>
-        <div className="flex gap-2 px-4">
-          {Object.entries(timeLeft).map(([unit, value]) => (
-            <div
-              key={unit}
-              className="flex flex-col items-center rounded-lg p-1 flex-1"
-            >
-              <p className="text-xl font-bold">{value}</p>
-              <p className="text-xs text-gray-400">{unit}</p>
-            </div>
-          ))}
+    <div className="flex flex-col w-full h-screen pb-20">
+      <div>
+        <img
+          src={gyokeres}
+          alt="gyokeres"
+          className="relative inset-0 w-full h-86 object-cover object-top"
+        />
+        <div className="flex flex-col top-0 left-0 absolute w-full bg-black/10 items-center">
+          <p className="px-4 pt-3">{countdownLabel}</p>
+          <div className="flex gap-2 px-4">
+            {Object.entries(timeLeft).map(([unit, value]) => (
+              <div
+                key={unit}
+                className="flex flex-col items-center rounded-lg p-1 flex-1"
+              >
+                <p className="text-xl font-bold">{value}</p>
+                <p className="text-xs text-gray-400">{unit}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <p className="-bottom-55 left-1/2 -translate-x-1/2 text-xs text-gray-600 absolute">
+      <div className="flex flex-col gap-4">
+        <h1
+          style={{ fontFamily: "Quicksand, sans-serif" }}
+          className="font-bold text-5xl w-full text-center"
+        >
+          VM-Tips 2026
+        </h1>
+        <p className="px-14 text-center leading-relaxed text-gray-300">
+          Här tävlar vi om vem som kan förutspå VM bäst. Följ matcherna live,
+          kolla topplistan och se hur dina tips håller sig!
+        </p>
+      </div>
+      <p className="mt-auto bottom-0 left-0 text-center text-xs text-gray-600">
         © Kitte Spel & Dobbel
       </p>
     </div>
