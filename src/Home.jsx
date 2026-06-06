@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
 import gyokeres from "./assets/gyökeres2.png";
+import {
+  HouseIcon,
+  Trophy,
+  SoccerBallIcon,
+  UsersIcon,
+  ChatsCircleIcon,
+} from "@phosphor-icons/react";
 
 function Home() {
   const [timeLeft, setTimeLeft] = useState({});
@@ -84,25 +91,34 @@ function Home() {
           </p>
 
           <p className="mb-4">
-            <strong>- TOPPLISTAN</strong> - Följ kampen om förstaplatsen men
-            även sistaplatsen.
+            <strong className="flex items-center gap-2">
+              - TOPPLISTAN <Trophy size={18} />
+            </strong>{" "}
+            - Följ kampen om förstaplatsen men även sistaplatsen.
           </p>
 
           <p className="mb-4">
-            <strong>- MATCHERNA</strong> - Live, kommande och spelade matcher.
-            Klicka dig in på matchen och se vad alla har tippat för resultat.
+            <strong className="flex items-center gap-2">
+              - MATCHERNA <SoccerBallIcon size={18} />
+            </strong>{" "}
+            - Live, kommande och spelade matcher. Klicka dig in på matchen och
+            se vad alla har tippat för resultat.
           </p>
 
           <p className="mb-4">
-            <strong>- GÄSTBOKEN</strong> - Stället där diskussionerna förs.
-            Berätta hur duktig du är på att tippa eller hitta på dåliga
-            bortförklaringar eller varför inte en rolig kommentar? Här är
-            stället du skriver för att nå alla.
+            <strong className="flex items-center gap-2">
+              - GÄSTBOKEN <ChatsCircleIcon size={18} />
+            </strong>{" "}
+            - Stället där diskussionerna förs. Berätta hur duktig du är på att
+            tippa eller hitta på dåliga bortförklaringar eller varför inte en
+            rolig kommentar? Här är stället du skriver för att nå alla.
           </p>
           <p className="mb-4">
-            <strong>- DELTAGARNA</strong> - Här kan du få tillgång till allas
-            tippningar. Gå in och kika på någon och förbättra ditt eget
-            självförtroende
+            <strong className="flex items-center gap-2">
+              - DELTAGARNA <UsersIcon size={18} />
+            </strong>{" "}
+            - Här kan du få tillgång till allas tippningar. Gå in och kika på
+            någon och förbättra ditt eget självförtroende
           </p>
         </div>
       </div>
