@@ -34,8 +34,8 @@ function Comments() {
   }
 
   return (
-    <div className="flex flex-col gap-4 px-8">
-      <h1 className="text-3xl text-center pb-1">Kommentarer</h1>
+    <div className="flex flex-col gap-4 py-4 px-8">
+      <h1 className="text-3xl text-center pb-1">Gästbok</h1>
       <div className="flex flex-col gap-1">
         <label htmlFor="name" className="font-semibold">
           Namn<span className="text-red-400">*</span>
@@ -74,7 +74,7 @@ function Comments() {
       {comments.map((comment, index) => (
         <div key={index} className="border-b border-gray-700 pb-4">
           <div className="flex justify-between items-center">
-            <p className="font-bold">{comment.name}</p>
+            <p className="font-bold mb-1">{comment.name}</p>
             <p className="text-xs text-gray-400">
               {new Date(comment.date).toLocaleString("sv-SE")}
             </p>

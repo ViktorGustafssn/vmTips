@@ -46,7 +46,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col w-full h-screen pb-20">
+    <div className="flex flex-col w-full min-h-screen">
       <div>
         <img
           src={gyokeres}
@@ -55,7 +55,7 @@ function Home() {
         />
         <div className="flex flex-col top-0 left-0 absolute w-full bg-black/10 items-center">
           <p className="px-4 pt-3">{countdownLabel}</p>
-          <div className="flex gap-2 px-4">
+          <div className="flex gap-2 px-4 sticky">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div
                 key={unit}
@@ -71,18 +71,42 @@ function Home() {
       <div className="flex flex-col gap-4">
         <h1
           style={{ fontFamily: "Quicksand, sans-serif" }}
-          className="font-bold text-5xl w-full text-center"
+          className="font-bold text-3xl w-full text-center"
         >
-          VM-Tips 2026
+          Välkommen till Bergöns VM-tips 2026
         </h1>
-        <p className="px-14 text-center leading-relaxed text-gray-300">
-          Här tävlar vi om vem som kan förutspå VM bäst. Följ matcherna live,
-          kolla topplistan och se hur dina tips håller sig!
-        </p>
+        <div className="px-10 leading-relaxed text-gray-300">
+          <p className="mb-4 text-center">
+            Efter 8 års väntan är Sverige äntligen tillbaka i VM, och nu är det
+            dags för oss att följa mästerskapet tillsammans! I årets upplaga är
+            vi 21 tippare som ska göra upp om skryträtt, ära men framförallt
+            prispotten. Här på hemsidan kommer du att hitta följande:
+          </p>
+
+          <p className="mb-4">
+            <strong>- TOPPLISTAN</strong> - Följ kampen om förstaplatsen men
+            även sistaplatsen.
+          </p>
+
+          <p className="mb-4">
+            <strong>- MATCHERNA</strong> - Live, kommande och spelade matcher.
+            Klicka dig in på matchen och se vad alla har tippat för resultat.
+          </p>
+
+          <p className="mb-4">
+            <strong>- GÄSTBOKEN</strong> - Stället där diskussionerna förs.
+            Berätta hur duktig du är på att tippa eller hitta på dåliga
+            bortförklaringar eller varför inte en rolig kommentar? Här är
+            stället du skriver för att nå alla.
+          </p>
+          <p className="mb-4">
+            <strong>- DELTAGARNA</strong> - Här kan du få tillgång till allas
+            tippningar. Gå in och kika på någon och förbättra ditt eget
+            självförtroende
+          </p>
+        </div>
       </div>
-      <p className="mt-auto bottom-0 left-0 text-center text-xs text-gray-600">
-        © Kitte Spel & Dobbel
-      </p>
+      <p className="text-center text-xs text-gray-600">© Kitte Spel & Dobbel</p>
     </div>
   );
 }

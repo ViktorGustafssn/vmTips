@@ -117,45 +117,45 @@ function Participants(props) {
                               className="flex justify-between text-base"
                             >
                               <p className="text-gray-400">
-                                {match.homeTeam.name} - {match.awayTeam.name}
+                                {match.homeTeam.name.slice(0, 12)} -{" "}
+                                {match.awayTeam.name.slice(0, 12)}
                               </p>
                               <div className="flex gap-2 justify-center items-center">
-                                <div className="flex items-center justify-center gap-1">
+                                <div className="flex items-center justify-center">
                                   <p
-                                    className={
+                                    className={`flex justify-center w-4  ${
                                       matchPlayed
                                         ? homeCorrect
                                           ? "text-green-500"
                                           : "text-red-500"
                                         : "text-gray-400"
-                                    }
+                                    }`}
                                   >
                                     {tip?.home ?? "-"}
                                   </p>
                                   <p className="text-gray-400">-</p>
                                   <p
-                                    className={
+                                    className={`flex justify-center w-4 ${
                                       matchPlayed
                                         ? awayCorrect
                                           ? "text-green-500"
                                           : "text-red-500"
                                         : "text-gray-400"
-                                    }
+                                    }`}
                                   >
                                     {tip?.away ?? "-"}
                                   </p>
                                 </div>
-
                                 <div className="flex gap-2 items-center justify-center">
-                                  <p className="text-xs text-gray-400">•</p>
+                                  <span className="text-gray-400">•</span>
                                   <p
-                                    className={
+                                    className={`flex justify-center w-4  ${
                                       matchPlayed
-                                        ? actualSign === tip.sign
+                                        ? actualSign
                                           ? "text-green-500"
                                           : "text-red-500"
                                         : "text-gray-400"
-                                    }
+                                    }`}
                                   >
                                     {tip?.sign ?? "-"}
                                   </p>

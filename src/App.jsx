@@ -115,6 +115,12 @@ function App() {
           );
           return { ...apiMatch, tips: localMatch ? localMatch.tips : {} };
         });
+        console.log(
+          data.matches.map((m) => ({
+            home: m.homeTeam.name,
+            away: m.awayTeam.name,
+          })),
+        );
 
         setLiveMatches(matchesWithTips);
 
@@ -162,9 +168,7 @@ function App() {
             <Participants players={playersWithPoints} matches={liveMatches} />
           </div>
         ) : null}
-        <div className="pt-4">
-          {activeTab === "comments" ? <Comments /> : null}
-        </div>
+        {activeTab === "comments" ? <Comments /> : null}
       </div>
     </>
   );
