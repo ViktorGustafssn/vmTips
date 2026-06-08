@@ -1,7 +1,9 @@
 export const bonusResults = {
-  topScorer: "", //TODO fylls i när VM är klart
-  mostGoalsTeam: "",
-  mostConcededTeam: "",
+  bronzeWinner: "Argentina",
+  worldChampion: "Brazil",
+  topScorer: "Mbappe", //TODO fylls i när VM är klart
+  mostGoalsTeam: "France",
+  mostConcededTeam: "Saudi Arabia",
   swedenGoals: null,
-  fastestGoal: "",
+  fastestGoal: "Brazil",
 };

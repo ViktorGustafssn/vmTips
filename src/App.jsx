@@ -8,6 +8,7 @@ import Participants from "./Participants.jsx";
 import Comments from "./Comment.jsx";
 import { players, matches, predictions } from "./data.js";
 import { bonusResults } from "./results.js";
+import { calculatePredictionPoints } from "./utils.js";
 
 function App() {
   const [activeTab, setActiveTab] = useState("hem");
@@ -38,58 +39,13 @@ function App() {
     return points;
   }
 
-  function calculatePredictionPoints(playerName, matchesToUse) {
-    let points = 0;
-    const pred = predictions[playerName];
-    if (!pred) return 0;
-
-    const stageMap = [
-      { stage: "LAST_32", predKey: "roundOf32", points: 1 },
-      { stage: "LAST_16", predKey: "roundOf16", points: 2 },
-      { stage: "QUARTER_FINALS", predKey: "quarterFinals", points: 4 },
-      { stage: "SEMI_FINALS", predKey: "semiFinals", points: 6 },
-      { stage: "FINAL", predKey: "finals", points: 8 },
-    ];
-
-    stageMap.forEach(({ stage, predKey, points: pts }) => {
-      const stageMatches = matchesToUse.filter((m) => m.stage === stage);
-      const actualTeams = stageMatches.flatMap((m) => [
-        m.homeTeam.name,
-        m.awayTeam.name,
-      ]);
-      pred[predKey].forEach((team) => {
-        if (actualTeams.includes(team)) points += pts;
-      });
-    });
-
-    // Bronsmatch
-    const bronzeMatch = matchesToUse.find((m) => m.stage === "THIRD_PLACE");
-    if (bronzeMatch && bronzeMatch.score?.fullTime?.home !== null) {
-      const bronzeWinner =
-        bronzeMatch.score.fullTime.home > bronzeMatch.score.fullTime.away
-          ? bronzeMatch.homeTeam.name
-          : bronzeMatch.awayTeam.name;
-      if (pred.bronzeWinner === bronzeWinner) points += 20;
-    }
-
-    // Världsmästare
-    const final = matchesToUse.find((m) => m.stage === "FINAL");
-    if (final && final.score?.fullTime?.home !== null) {
-      const champion =
-        final.score.fullTime.home > final.score.fullTime.away
-          ? final.homeTeam.name
-          : final.awayTeam.name;
-      if (pred.worldChampion === champion) points += 20;
-    }
-
-    return points;
-  }
-
   function calculateBonusPoints(playerName) {
     let points = 0;
     const pred = predictions[playerName];
     if (!pred) return 0;
 
+    if (pred.worldChampion === bonusResults.worldChampion) points += 20;
+    if (pred.bronzeWinner === bonusResults.bronzeWinner) points += 20;
     if (pred.topScorer === bonusResults.topScorer) points += 20;
     if (pred.mostGoalsTeam === bonusResults.mostGoalsTeam) points += 10;
     if (pred.mostConcededTeam === bonusResults.mostConcededTeam) points += 10;
@@ -115,12 +71,6 @@ function App() {
           );
           return { ...apiMatch, tips: localMatch ? localMatch.tips : {} };
         });
-        console.log(
-          data.matches.map((m) => ({
-            home: m.homeTeam.name,
-            away: m.awayTeam.name,
-          })),
-        );
 
         setLiveMatches(matchesWithTips);
 
@@ -139,7 +89,11 @@ function App() {
             ...player,
             points:
               calculatePoints(player.name, matchesWithTips) +
-              calculatePredictionPoints(player.name, matchesWithTips) +
+              calculatePredictionPoints(
+                player.name,
+                matchesWithTips,
+                predictions,
+              ) +
               calculateBonusPoints(player.name),
           }))
           .sort((a, b) => b.points - a.points);
