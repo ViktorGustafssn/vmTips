@@ -86,9 +86,15 @@ function Home() {
           <p className="mb-4 text-center">
             Efter 8 års väntan är Sverige äntligen tillbaka i VM, och nu är det
             dags för oss att följa mästerskapet tillsammans! I årets upplaga är
-            vi 21 tippare som ska göra upp om skryträtt, ära men framförallt
-            prispotten. Här på hemsidan kommer du att hitta följande:
+            vi 24 tippare som ska göra upp om skryträtt, ära men framförallt
+            prispotten.
           </p>
+
+          <p>1:a plats: 2200kr</p>
+          <p>2:a plats: 1000kr</p>
+          <p className="mb-4">3:e plats: 400kr</p>
+
+          <p className="mb-4">Här på hemsidan kommer du att hitta följande:</p>
 
           <p className="mb-4">
             <strong className="flex items-center gap-2">
@@ -119,6 +125,56 @@ function Home() {
             </strong>{" "}
             - Här kan du få tillgång till allas tippningar. Gå in och kika på
             någon och förbättra ditt eget självförtroende
+          </p>
+        </div>
+        <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
+          <p className="text-lg mb-4 font-bold">
+            Här kommer den officiella poängräkningen
+          </p>
+          <p className="mb-4 font-semibold">Samtliga matcher i gruppen</p>
+          <ol className="list-decimal pl-4 ">
+            <li>Rätt antal mål per lag, 2 poäng</li>
+            <li>Rätt tecken (1X2), 3 poäng</li>
+            <li>7 poäng kan delas ut i samtliga matcher</li>
+          </ol>
+
+          <p className="my-4 font-semibold">Slutspel:</p>
+          <ol className="list-decimal pl-4">
+            <li>Rätt lag i sextondel, 1 poäng per lag</li>
+            <li>Rätt lag i åttondelsfinal, 2 poäng per lag</li>
+            <li>Rätt lag i kvartsfinal, 4 poäng per lag</li>
+            <li>Rätt lag i semifinal, 6 poäng per lag</li>
+            <li>Rätt lag I final, 8 poäng per lag </li>
+          </ol>
+
+          <p className="my-4 font-semibold">Bonusfrågor</p>
+
+          <ol className="list-decimal pl-4">
+            <li>Skyttekung, 20 poäng</li>
+            <li>Världsmästare, 20 poäng</li>
+            <li>Vinnare bronsmatch, 20 poäng</li>
+            <li>Lag som gör mest mål i gruppspelet, 10 poäng</li>
+            <li>Lag som släpper in flest mål i gruppspelet, 10 poäng</li>
+            <li>
+              Hur många mål gör Sverige i VM (självmål räknas ej), 10 poäng
+            </li>
+            <li>Vilket land gör snabbaste målet i omgång 1, 10 poäng</li>
+          </ol>
+          <p className="py-4 font-semibold">
+            Går du för full pott på det här tipset så kommer du få följande
+            poäng:
+          </p>
+          <ol className="list-decimal pl-4">
+            <li>Gruppspelet 504 poäng</li>
+            <li>Sextondelsfinal 32 poäng</li>
+            <li>Åttondelsfinal 32 poäng</li>
+            <li>Kvartsfinal 32 poäng</li>
+            <li>Semifinal 24 poäng</li>
+            <li>Final 16 poäng</li>
+            <li>Bonusfrågor 100 poäng</li>
+          </ol>
+          <p className="py-4">
+            <strong>Totalt: </strong>740 poäng
           </p>
         </div>
       </div>

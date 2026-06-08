@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CaretDoubleDownIcon } from "@phosphor-icons/react";
 
 function MatchCard(props) {
   const [showTips, setShowTip] = useState(false);
@@ -71,6 +72,10 @@ function MatchCard(props) {
           />
           <p className="font-semibold">{props.match.awayTeam.name}</p>
         </div>
+      </div>
+      <div className="flex flex-col items-center">
+        <p>Klicka för att se allas tips</p>
+        <CaretDoubleDownIcon size={20} />
       </div>
       {showTips && (
         <div>

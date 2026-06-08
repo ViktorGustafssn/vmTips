@@ -7,7 +7,6 @@ import { CaretDoubleDownIcon } from "@phosphor-icons/react";
 function Participants(props) {
   const [expandedPlayer, setExpandedPlayer] = useState(null);
   const actualTeams = getActualTeamsByStage(props.matches);
-  console.log(actualTeams);
 
   const matchesByGroup = props.matches.reduce((acc, match) => {
     const group = match.group?.replace("GROUP_", "") ?? match.stage;
