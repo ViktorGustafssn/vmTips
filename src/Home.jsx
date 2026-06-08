@@ -139,45 +139,90 @@ function Home() {
           </p>
           <p className="mb-4 font-semibold">Samtliga matcher i gruppen</p>
           <ol>
-            <li>• Rätt antal mål per lag, 2 poäng</li>
-            <li>• Rätt tecken (1X2), 3 poäng</li>
-            <li>• 7 poäng kan delas ut i samtliga matcher</li>
+            <li>
+              • Rätt antal mål per lag, <strong>2 poäng</strong>
+            </li>
+            <li>
+              • Rätt tecken (1X2), <strong>3 poäng</strong>
+            </li>
+            <li>
+              • <strong>7 poäng</strong> kan delas ut i samtliga matcher
+            </li>
           </ol>
 
           <p className="my-4 font-semibold">Slutspel:</p>
           <ol>
-            <li>• Rätt lag i sextondel, 1 poäng per lag</li>
-            <li>• Rätt lag i åttondelsfinal, 2 poäng per lag</li>
-            <li>• Rätt lag i kvartsfinal, 4 poäng per lag</li>
-            <li>• Rätt lag i semifinal, 6 poäng per lag</li>
-            <li>• Rätt lag I final, 8 poäng per lag </li>
+            <li>
+              • Rätt lag i sextondel, <strong>1 poäng</strong>/lag
+            </li>
+            <li>
+              • Rätt lag i åttondelsfinal, <strong>2 poäng</strong>/lag
+            </li>
+            <li>
+              • Rätt lag i kvartsfinal, <strong>4 poäng</strong>/lag
+            </li>
+            <li>
+              • Rätt lag i semifinal, <strong>6 poäng</strong>/lag
+            </li>
+            <li>
+              • Rätt lag I final, <strong>8 poäng</strong>/lag{" "}
+            </li>
           </ol>
 
           <p className="my-4 font-semibold">Bonusfrågor</p>
 
           <ol>
-            <li>• Skyttekung, 20 poäng</li>
-            <li>• Världsmästare, 20 poäng</li>
-            <li>• Vinnare bronsmatch, 20 poäng</li>
-            <li>• Lag som gör mest mål i gruppspelet, 10 poäng</li>
-            <li>• Lag som släpper in flest mål i gruppspelet, 10 poäng</li>
             <li>
-              • Hur många mål gör Sverige i VM (självmål räknas ej), 10 poäng
+              • Skyttekung, <strong>20 poäng</strong>
             </li>
-            <li>• Vilket land gör snabbaste målet i omgång 1, 10 poäng</li>
+            <li>
+              • Världsmästare, <strong>20 poäng</strong>
+            </li>
+            <li>
+              • Vinnare bronsmatch, <strong>20 poäng</strong>
+            </li>
+            <li>
+              • Lag som gör mest mål i gruppspelet, <strong>10 poäng</strong>
+            </li>
+            <li>
+              • Lag som släpper in flest mål i gruppspelet,{" "}
+              <strong>10 poäng</strong>
+            </li>
+            <li>
+              • Hur många mål gör Sverige i VM (självmål räknas ej),{" "}
+              <strong>10 poäng</strong>
+            </li>
+            <li>
+              • Vilket land gör snabbaste målet i omgång 1,{" "}
+              <strong>10 poäng</strong>
+            </li>
           </ol>
           <p className="py-4 font-semibold">
             Går du för full pott på det här tipset så kommer du få följande
             poäng:
           </p>
           <ol>
-            <li>• Gruppspelet 504 poäng</li>
-            <li>• Sextondelsfinal 32 poäng</li>
-            <li>• Åttondelsfinal 32 poäng</li>
-            <li>• Kvartsfinal 32 poäng</li>
-            <li>• Semifinal 24 poäng</li>
-            <li>• Final 16 poäng</li>
-            <li>• Bonusfrågor 100 poäng</li>
+            <li>
+              • Gruppspelet <strong>504 poäng</strong>
+            </li>
+            <li>
+              • Sextondelsfinal <strong>32 poäng</strong>
+            </li>
+            <li>
+              • Åttondelsfinal <strong>32 poäng</strong>
+            </li>
+            <li>
+              • Kvartsfinal <strong>32 poäng</strong>
+            </li>
+            <li>
+              • Semifinal <strong>24 poäng</strong>
+            </li>
+            <li>
+              • Final <strong>16 poäng</strong>
+            </li>
+            <li>
+              • Bonusfrågor <strong>100 poäng</strong>
+            </li>
           </ol>
           <p className="py-4">
             <strong>Totalt: </strong>740 poäng
