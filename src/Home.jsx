@@ -94,6 +94,12 @@ function Home() {
           <p>2:a plats: 1000kr</p>
           <p className="mb-4">3:e plats: 400kr</p>
 
+          <div className="flex justify-center pb-4">
+            <button className="border border-gray-500 py-1 px-4 rounded-lg">
+              Poängräkning
+            </button>
+          </div>
+
           <p className="mb-4">Här på hemsidan kommer du att hitta följande:</p>
 
           <p className="mb-4">
