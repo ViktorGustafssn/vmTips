@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import gyokeres from "./assets/gyökeres2.png";
 import {
-  HouseIcon,
   Trophy,
   SoccerBallIcon,
   UsersIcon,

@@ -73,9 +73,19 @@ function MatchCard(props) {
           <p className="font-semibold">{props.match.awayTeam.name}</p>
         </div>
       </div>
-      <div className="flex flex-col items-center">
-        <p>Klicka för att se allas tips</p>
-        <CaretDoubleDownIcon size={20} />
+      <div className="flex flex-col items-center pt-3">
+        <p className="text-xs text-gray-400">
+          {showTips ? "Klicka för att stänga" : "Klicka för att se allas tips"}
+        </p>
+
+        <CaretDoubleDownIcon
+          size={20}
+          className="pt-1"
+          style={{
+            transform: showTips ? "rotate(180deg)" : "rotate(0deg)",
+            transition: "transform 0.3s",
+          }}
+        />
       </div>
       {showTips && (
         <div>
