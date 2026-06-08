@@ -135,22 +135,22 @@ function Home() {
         </div>
         <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
           <p className="text-lg mb-4 font-bold">
-            Här kommer den officiella poängräkningen
+            Den officiella poängräkningen
           </p>
           <p className="mb-4 font-semibold">Samtliga matcher i gruppen</p>
-          <ol className="list-decimal pl-4 ">
-            <li>Rätt antal mål per lag, 2 poäng</li>
-            <li>Rätt tecken (1X2), 3 poäng</li>
-            <li>7 poäng kan delas ut i samtliga matcher</li>
+          <ol>
+            <li>- Rätt antal mål per lag, 2 poäng</li>
+            <li>- Rätt tecken (1X2), 3 poäng</li>
+            <li>- 7 poäng kan delas ut i samtliga matcher</li>
           </ol>
 
           <p className="my-4 font-semibold">Slutspel:</p>
-          <ol className="list-decimal pl-4">
-            <li>Rätt lag i sextondel, 1 poäng per lag</li>
-            <li>Rätt lag i åttondelsfinal, 2 poäng per lag</li>
-            <li>Rätt lag i kvartsfinal, 4 poäng per lag</li>
-            <li>Rätt lag i semifinal, 6 poäng per lag</li>
-            <li>Rätt lag I final, 8 poäng per lag </li>
+          <ol className="">
+            <li>• Rätt lag i sextondel, 1 poäng per lag</li>
+            <li>• Rätt lag i åttondelsfinal, 2 poäng per lag</li>
+            <li>• Rätt lag i kvartsfinal, 4 poäng per lag</li>
+            <li>• Rätt lag i semifinal, 6 poäng per lag</li>
+            <li>• Rätt lag I final, 8 poäng per lag </li>
           </ol>
 
           <p className="my-4 font-semibold">Bonusfrågor</p>
