@@ -139,13 +139,13 @@ function Home() {
           </p>
           <p className="mb-4 font-semibold">Samtliga matcher i gruppen</p>
           <ol>
-            <li>- Rätt antal mål per lag, 2 poäng</li>
-            <li>- Rätt tecken (1X2), 3 poäng</li>
-            <li>- 7 poäng kan delas ut i samtliga matcher</li>
+            <li>• Rätt antal mål per lag, 2 poäng</li>
+            <li>• Rätt tecken (1X2), 3 poäng</li>
+            <li>• 7 poäng kan delas ut i samtliga matcher</li>
           </ol>
 
           <p className="my-4 font-semibold">Slutspel:</p>
-          <ol className="">
+          <ol>
             <li>• Rätt lag i sextondel, 1 poäng per lag</li>
             <li>• Rätt lag i åttondelsfinal, 2 poäng per lag</li>
             <li>• Rätt lag i kvartsfinal, 4 poäng per lag</li>
@@ -155,29 +155,29 @@ function Home() {
 
           <p className="my-4 font-semibold">Bonusfrågor</p>
 
-          <ol className="list-decimal pl-4">
-            <li>Skyttekung, 20 poäng</li>
-            <li>Världsmästare, 20 poäng</li>
-            <li>Vinnare bronsmatch, 20 poäng</li>
-            <li>Lag som gör mest mål i gruppspelet, 10 poäng</li>
-            <li>Lag som släpper in flest mål i gruppspelet, 10 poäng</li>
+          <ol>
+            <li>• Skyttekung, 20 poäng</li>
+            <li>• Världsmästare, 20 poäng</li>
+            <li>• Vinnare bronsmatch, 20 poäng</li>
+            <li>• Lag som gör mest mål i gruppspelet, 10 poäng</li>
+            <li>• Lag som släpper in flest mål i gruppspelet, 10 poäng</li>
             <li>
-              Hur många mål gör Sverige i VM (självmål räknas ej), 10 poäng
+              • Hur många mål gör Sverige i VM (självmål räknas ej), 10 poäng
             </li>
-            <li>Vilket land gör snabbaste målet i omgång 1, 10 poäng</li>
+            <li>• Vilket land gör snabbaste målet i omgång 1, 10 poäng</li>
           </ol>
           <p className="py-4 font-semibold">
             Går du för full pott på det här tipset så kommer du få följande
             poäng:
           </p>
-          <ol className="list-decimal pl-4">
-            <li>Gruppspelet 504 poäng</li>
-            <li>Sextondelsfinal 32 poäng</li>
-            <li>Åttondelsfinal 32 poäng</li>
-            <li>Kvartsfinal 32 poäng</li>
-            <li>Semifinal 24 poäng</li>
-            <li>Final 16 poäng</li>
-            <li>Bonusfrågor 100 poäng</li>
+          <ol>
+            <li>• Gruppspelet 504 poäng</li>
+            <li>• Sextondelsfinal 32 poäng</li>
+            <li>• Åttondelsfinal 32 poäng</li>
+            <li>• Kvartsfinal 32 poäng</li>
+            <li>• Semifinal 24 poäng</li>
+            <li>• Final 16 poäng</li>
+            <li>• Bonusfrågor 100 poäng</li>
           </ol>
           <p className="py-4">
             <strong>Totalt: </strong>740 poäng
