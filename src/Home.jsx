@@ -133,6 +133,35 @@ function Home() {
           </p>
         </div>
         <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
+          <strong className="pb-4 text-lg">
+            En snabb sammanfattning om hur VM kommer att sluta om man ska tro på
+            dom tips som lämnats in.
+          </strong>
+          <ol className="flex flex-col gap-1">
+            <li>
+              • Mexico vinner premiärmatchen enligt 100%. 83,3 % tror att
+              Sydafrika gör 0 mål i den matchen.
+            </li>
+            <li>
+              • Alla är överens över att Sverige går vidare till slutspel.
+            </li>
+            <li>
+              • Störst seger hittar vi matchen Brasilien - Haiti som kommer
+              sluta 9-0.
+            </li>
+            <li>• Skyttekungen blir Mbappe enligt 41,7%</li>
+            <li>
+              • Norge ser ut att göra ett historiskt bra mästerskap. Norge till
+              kvartsfinal enligt 25%
+            </li>
+            <li>
+              • Favoriter till att bli världsmästare är Frankrike enligt 37,5%
+            </li>
+            <li>• 8,33% tror att Sverige gör en repris på VM 94</li>
+            <li>• 4,17% tror att Sverige vinner VM</li>
+          </ol>
+        </div>
+        <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
           <p className="text-lg mb-4 font-bold">
             Den officiella poängräkningen
           </p>

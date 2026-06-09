@@ -1,14 +1,14 @@
 export const players = [
   { id: 1, name: "Bertil Gustafsson", points: 0 },
-  { id: 2, name: "Berra Gustafsson", points: 0 },
+  { id: 2, name: "Roger Lindström", points: 0 },
   { id: 3, name: "Eva Andersson", points: 0 },
-  { id: 4, name: "Eva kAndersson", points: 0 },
+  { id: 4, name: "Håkan Lindberg", points: 0 },
   { id: 5, name: "Petter Gustafsson", points: 0 },
-  { id: 6, name: "Petter Eriksson", points: 0 },
+  { id: 6, name: "Mikael Berggren", points: 0 },
   { id: 7, name: "Anna Gustafsson", points: 0 },
-  { id: 8, name: "Håkan Lindberg", points: 0 },
+  { id: 8, name: "Peter Lindberg", points: 0 },
   { id: 9, name: "Per Gustafsson", points: 0 },
-  { id: 10, name: "Peter Wiklund", points: 0 },
+  { id: 10, name: "Peter Viklund", points: 0 },
   { id: 11, name: "Eva Egmalm", points: 0 },
   { id: 12, name: "Anders Liljedahl", points: 0 },
   { id: 13, name: "Ida Gustafsson", points: 0 },
@@ -22,7 +22,7 @@ export const players = [
   { id: 21, name: "Jimmy Riddermark", points: 0 },
   { id: 22, name: "Joel Hellgren", points: 0 },
   { id: 23, name: "Andrew Cameron-Webb", points: 0 },
-  { id: 24, name: "Andrew kompis", points: 0 },
+  { id: 24, name: "Helmer Lindström", points: 0 },
 ];
 
 export const matches = [
