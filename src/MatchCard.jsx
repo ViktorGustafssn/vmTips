@@ -121,9 +121,12 @@ function MatchCard(props) {
                     <div className="flex text-sm gap-[2px] font-semibold">
                       <p
                         className={
-                          homeScore === props.match.tips?.[player.name]?.home
-                            ? "text-green-500"
-                            : "text-red-500"
+                          homeScore === null
+                            ? "text-gray-400"
+                            : homeScore ===
+                                props.match.tips?.[player.name]?.home
+                              ? "text-green-500"
+                              : "text-red-500"
                         }
                       >
                         {props.match.tips?.[player.name]?.home}{" "}
@@ -131,9 +134,12 @@ function MatchCard(props) {
                       <p>-</p>
                       <p
                         className={
-                          awayScore === props.match.tips?.[player.name]?.away
-                            ? "text-green-500"
-                            : "text-red-500"
+                          homeScore === null
+                            ? "text-gray-400"
+                            : awayScore ===
+                                props.match.tips?.[player.name]?.away
+                              ? "text-green-500"
+                              : "text-red-500"
                         }
                       >
                         {props.match.tips?.[player.name]?.away}{" "}
