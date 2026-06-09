@@ -156,7 +156,7 @@ function Home() {
           </ol>
         </div>
         <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
-          <p className="text-lg mb-4 font-bold">
+          <p className="text-lg mb-4 font-bold mt-4">
             Den officiella poängräkningen
           </p>
           <p className="mb-4 font-semibold">Samtliga matcher i gruppen</p>
