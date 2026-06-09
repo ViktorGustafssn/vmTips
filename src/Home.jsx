@@ -93,13 +93,7 @@ function Home() {
           <p>2:a plats: 1000kr</p>
           <p className="mb-4">3:e plats: 400kr</p>
 
-          <div className="flex justify-center pb-4">
-            <button className="border border-gray-500 py-1 px-4 rounded-lg">
-              Poängräkning
-            </button>
-          </div>
-
-          <p className="mb-4">Här på hemsidan kommer du att hitta följande:</p>
+          <p className="mb-4">På hemsidan kommer du att hitta följande:</p>
 
           <p className="mb-4">
             <strong className="flex items-center gap-2">
@@ -125,7 +119,7 @@ function Home() {
             rolig kommentar? Här är stället du skriver för att nå alla.
           </p>
           <p className="mb-4">
-            <strong className="flex items-center gap-2">
+            <strong className="flex items-center gap-4">
               - DELTAGARNA <UsersIcon size={18} />
             </strong>{" "}
             - Här kan du få tillgång till allas tippningar. Gå in och kika på
@@ -137,7 +131,7 @@ function Home() {
             En snabb sammanfattning om hur VM kommer att sluta om man ska tro på
             dom tips som lämnats in.
           </strong>
-          <ol className="flex flex-col gap-1">
+          <ol className="flex flex-col gap-4">
             <li>
               • Mexico vinner premiärmatchen enligt 100%. 83,3 % tror att
               Sydafrika gör 0 mål i den matchen.
