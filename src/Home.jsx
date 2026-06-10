@@ -12,16 +12,19 @@ function Home() {
   const [countdownLabel, setCountdownLabel] = useState("Första matchen om");
 
   const swedenMatches = [
-    { date: new Date("2026-06-15T04:00:00Z"), label: "Sverige - Tunisien" },
     {
-      date: new Date("2026-06-20T19:00:00Z"),
+      date: new Date("2026-06-15T04:00:00+02:00"),
+      label: "Sverige - Tunisien",
+    },
+    {
+      date: new Date("2026-06-20T19:00:00+02:00"),
       label: "Nederländerna - Sverige",
     },
-    { date: new Date("2026-06-26T01:00:00Z"), label: "Japan - Sverige" },
+    { date: new Date("2026-06-26T01:00:00+02:00"), label: "Japan - Sverige" },
   ];
 
   useEffect(() => {
-    const firstMatch = new Date("2026-06-11T15:00:00Z");
+    const firstMatch = new Date("2026-06-11T21:00:00+02:00");
 
     const interval = setInterval(() => {
       const now = new Date();
