@@ -2528,6 +2528,7 @@ export const predictions = {
       "Mexico",
       "Norway",
       "United States",
+      "Croatia",
     ],
     quarterFinals: [
       "Portugal",
