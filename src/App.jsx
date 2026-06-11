@@ -61,6 +61,7 @@ function App() {
         headers: {
           "X-Auth-Token": import.meta.env.VITE_API_KEY,
         },
+        cache: "no-store",
       })
         .then((res) => res.json())
         .then((data) => {
