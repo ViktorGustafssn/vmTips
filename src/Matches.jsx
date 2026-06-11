@@ -6,7 +6,7 @@ function Matches(props) {
 
   const filteredMatches = props.matches.filter((match) => {
     if (activeFilter === "live")
-      return match.status === "LIVE" || match.status === "IN-PLAY";
+      return match.status === "LIVE" || match.status === "IN_PLAY";
     if (activeFilter === "kommande") return match.status === "TIMED";
     if (activeFilter === "spelade") return match.status === "FINISHED";
   });

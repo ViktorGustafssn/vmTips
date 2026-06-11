@@ -63,6 +63,8 @@ function App() {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data); // lägg till här
+
         const matchesWithTips = data.matches.map((apiMatch) => {
           const localMatch = matches.find(
             (m) =>
@@ -73,6 +75,7 @@ function App() {
         });
 
         setLiveMatches(matchesWithTips);
+        console.log(matchesWithTips[0].status, matchesWithTips[0].score);
 
         // Räkna poäng här, när matchesWithTips är klar
         const calculated = players
