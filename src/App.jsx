@@ -56,15 +56,17 @@ function App() {
   }
 
   useEffect(() => {
+    let cancelled = false;
+
     const fetchData = () => {
       fetch("/api/v4/competitions/WC/matches", {
-        headers: {
-          "X-Auth-Token": import.meta.env.VITE_API_KEY,
-        },
+        headers: { "X-Auth-Token": import.meta.env.VITE_API_KEY },
         cache: "no-store",
       })
         .then((res) => res.json())
         .then((data) => {
+          if (cancelled) return;
+
           const matchesWithTips = data.matches.map((apiMatch) => {
             const localMatch = matches.find(
               (m) =>
@@ -91,13 +93,17 @@ function App() {
             .sort((a, b) => b.points - a.points);
 
           setPlayersWithPoints(calculated);
-        });
+        })
+        .catch(() => console.error("Kunde inte hämta matchdata"));
     };
 
-    fetchData(); // kör direkt
-    const interval = setInterval(fetchData, 60000); // uppdatera var 60:e sekund
+    fetchData();
+    const interval = setInterval(fetchData, 30000); // 30s under live, annars 60s
 
-    return () => clearInterval(interval); // städa upp när komponenten unmountas
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+    };
   }, []);
 
   return (

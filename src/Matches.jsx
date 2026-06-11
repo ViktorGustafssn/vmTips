@@ -1,19 +1,30 @@
 import MatchCard from "./MatchCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Matches(props) {
   const [activeFilter, setActiveFilter] = useState("kommande");
 
-  const filteredMatches = props.matches.filter((match) => {
-    if (activeFilter === "live")
-      return match.status === "LIVE" || match.status === "IN_PLAY";
-    if (activeFilter === "kommande") return match.status === "TIMED";
-    if (activeFilter === "spelade") return match.status === "FINISHED";
-  });
-
   const hasLiveMatches = props.matches.some(
     (m) => m.status === "LIVE" || m.status === "IN_PLAY",
   );
+
+  useEffect(() => {
+    if (hasLiveMatches && activeFilter === "kommande") {
+      setActiveFilter("live");
+    }
+  }, [hasLiveMatches, activeFilter]);
+
+  const filteredMatches = props.matches.filter((match) => {
+    if (activeFilter === "live")
+      return (
+        match.status === "LIVE" ||
+        match.status === "IN_PLAY" ||
+        match.status === "PAUSED"
+      );
+    if (activeFilter === "kommande")
+      return match.status === "TIMED" || match.status === "SCHEDULED";
+    if (activeFilter === "spelade") return match.status === "FINISHED";
+  });
 
   return (
     <div>
