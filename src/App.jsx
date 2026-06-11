@@ -56,44 +56,47 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("/api/v4/competitions/WC/matches", {
-      headers: {
-        "X-Auth-Token": import.meta.env.VITE_API_KEY,
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data); // lägg till här
+    const fetchData = () => {
+      fetch("/api/v4/competitions/WC/matches", {
+        headers: {
+          "X-Auth-Token": import.meta.env.VITE_API_KEY,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          const matchesWithTips = data.matches.map((apiMatch) => {
+            const localMatch = matches.find(
+              (m) =>
+                m.home === apiMatch.homeTeam.name &&
+                m.away === apiMatch.awayTeam.name,
+            );
+            return { ...apiMatch, tips: localMatch ? localMatch.tips : {} };
+          });
 
-        const matchesWithTips = data.matches.map((apiMatch) => {
-          const localMatch = matches.find(
-            (m) =>
-              m.home === apiMatch.homeTeam.name &&
-              m.away === apiMatch.awayTeam.name,
-          );
-          return { ...apiMatch, tips: localMatch ? localMatch.tips : {} };
+          setLiveMatches(matchesWithTips);
+
+          const calculated = players
+            .map((player) => ({
+              ...player,
+              points:
+                calculatePoints(player.name, matchesWithTips) +
+                calculatePredictionPoints(
+                  player.name,
+                  matchesWithTips,
+                  predictions,
+                ) +
+                calculateBonusPoints(player.name),
+            }))
+            .sort((a, b) => b.points - a.points);
+
+          setPlayersWithPoints(calculated);
         });
+    };
 
-        setLiveMatches(matchesWithTips);
-        console.log(matchesWithTips[0].status, matchesWithTips[0].score);
+    fetchData(); // kör direkt
+    const interval = setInterval(fetchData, 60000); // uppdatera var 60:e sekund
 
-        // Räkna poäng här, när matchesWithTips är klar
-        const calculated = players
-          .map((player) => ({
-            ...player,
-            points:
-              calculatePoints(player.name, matchesWithTips) +
-              calculatePredictionPoints(
-                player.name,
-                matchesWithTips,
-                predictions,
-              ) +
-              calculateBonusPoints(player.name),
-          }))
-          .sort((a, b) => b.points - a.points);
-
-        setPlayersWithPoints(calculated);
-      });
+    return () => clearInterval(interval); // städa upp när komponenten unmountas
   }, []);
 
   return (
