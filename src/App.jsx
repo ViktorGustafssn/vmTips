@@ -56,6 +56,7 @@ function App() {
   }
 
   useEffect(() => {
+    let timeoutId;
     let cancelled = false;
 
     const fetchData = () => {
@@ -63,9 +64,16 @@ function App() {
         headers: { "X-Auth-Token": import.meta.env.VITE_API_KEY },
         cache: "no-store",
       })
-        .then((res) => res.json())
+        .then((res) => {
+          if (res.status === 429) {
+            console.warn("Rate limited – väntar längre");
+            if (!cancelled) timeoutId = setTimeout(fetchData, 120000); // vänta 2 min
+            return null;
+          }
+          return res.json();
+        })
         .then((data) => {
-          if (cancelled) return;
+          if (!data || cancelled) return;
 
           const matchesWithTips = data.matches.map((apiMatch) => {
             const localMatch = matches.find(
@@ -93,16 +101,20 @@ function App() {
             .sort((a, b) => b.points - a.points);
 
           setPlayersWithPoints(calculated);
+
+          if (!cancelled) timeoutId = setTimeout(fetchData, 60000); // nästa anrop om 60s
         })
-        .catch(() => console.error("Kunde inte hämta matchdata"));
+        .catch((err) => {
+          console.error("Fetch-fel:", err);
+          if (!cancelled) timeoutId = setTimeout(fetchData, 60000); // försök igen om 60s
+        });
     };
 
     fetchData();
-    const interval = setInterval(fetchData, 30000); // 30s under live, annars 60s
 
     return () => {
       cancelled = true;
-      clearInterval(interval);
+      clearTimeout(timeoutId);
     };
   }, []);
 
