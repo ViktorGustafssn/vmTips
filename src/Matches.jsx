@@ -4,22 +4,32 @@ import { useState, useEffect } from "react";
 function Matches(props) {
   const [activeFilter, setActiveFilter] = useState("kommande");
 
+  const isTimedButLikelyLive = (match) => {
+    if (match.status !== "TIMED") return false;
+    const matchTime = new Date(match.utcDate).getTime();
+    const now = Date.now();
+    return now > matchTime && now < matchTime + 2 * 60 * 60 * 1000;
+  };
+
   const hasLiveMatches = props.matches.some(
-    (m) => m.status === "LIVE" || m.status === "IN_PLAY",
+    (m) =>
+      m.status === "LIVE" || m.status === "IN_PLAY" || isTimedButLikelyLive(m),
   );
 
   useEffect(() => {
     if (hasLiveMatches && activeFilter === "kommande") {
       setActiveFilter("live");
     }
-  }, [hasLiveMatches, activeFilter]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hasLiveMatches]);
 
   const filteredMatches = props.matches.filter((match) => {
     if (activeFilter === "live")
       return (
         match.status === "LIVE" ||
         match.status === "IN_PLAY" ||
-        match.status === "PAUSED"
+        match.status === "PAUSED" ||
+        isTimedButLikelyLive(match)
       );
     if (activeFilter === "kommande")
       return match.status === "TIMED" || match.status === "SCHEDULED";
@@ -29,7 +39,6 @@ function Matches(props) {
   return (
     <div>
       <h1 className="text-3xl text-center pb-4">Matcher</h1>
-
       <div className="flex gap-2 justify-center items-center">
         <button
           onClick={() => setActiveFilter("live")}
