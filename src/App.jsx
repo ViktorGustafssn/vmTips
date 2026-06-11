@@ -57,7 +57,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch(`/api/v4/competitions/WC/matches?t=${Date.now()}`, {
+      fetch("/api/v4/competitions/WC/matches", {
         headers: {
           "X-Auth-Token": import.meta.env.VITE_API_KEY,
         },
