@@ -23,18 +23,25 @@ function Matches(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasLiveMatches]);
 
-  const filteredMatches = props.matches.filter((match) => {
-    if (activeFilter === "live")
-      return (
-        match.status === "LIVE" ||
-        match.status === "IN_PLAY" ||
-        match.status === "PAUSED" ||
-        isTimedButLikelyLive(match)
-      );
-    if (activeFilter === "kommande")
-      return match.status === "TIMED" || match.status === "SCHEDULED";
-    if (activeFilter === "spelade") return match.status === "FINISHED";
-  });
+  const filteredMatches = props.matches
+    .filter((match) => {
+      if (activeFilter === "live")
+        return (
+          match.status === "LIVE" ||
+          match.status === "IN_PLAY" ||
+          match.status === "PAUSED" ||
+          isTimedButLikelyLive(match)
+        );
+      if (activeFilter === "kommande")
+        return match.status === "TIMED" || match.status === "SCHEDULED";
+      if (activeFilter === "spelade") return match.status === "FINISHED";
+    })
+    .sort((a, b) => {
+      if (activeFilter === "spelade") {
+        return new Date(b.utcDate) - new Date(a.utcDate);
+      }
+      return 0;
+    });
 
   return (
     <div>
