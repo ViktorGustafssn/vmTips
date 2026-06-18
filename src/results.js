@@ -5,5 +5,5 @@ export const bonusResults = {
   mostGoalsTeam: "",
   mostConcededTeam: "",
   swedenGoals: null,
-  fastestGoal: "",
+  fastestGoal: "Germany",
 };
