@@ -3203,7 +3203,7 @@ export const predictions = {
     mostGoalsTeam: "Spain",
     mostConcededTeam: "Kap Verde",
     swedenGoals: 7,
-    fastestGoal: "Tyskland",
+    fastestGoal: "Germany",
   },
   "Eva Egmalm": {
     roundOf32: [
