@@ -61,7 +61,10 @@ function App() {
 
     const fetchData = () => {
       fetch("/api/v4/competitions/WC/matches", {
-        headers: { "X-Auth-Token": import.meta.env.VITE_API_KEY },
+        headers: {
+          "X-Auth-Token": import.meta.env.VITE_API_KEY,
+          "X-Api-Version": "v4.1",
+        },
         cache: "no-store",
       })
         .then((res) => {

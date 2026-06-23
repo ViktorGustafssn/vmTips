@@ -60,7 +60,9 @@ function MatchCard(props) {
             <p>{props.match.score.fullTime?.away ?? "-"}</p>
           </div>
           <div className="flex items-center justify-center">
-            {isLive && <p className="text-xs">{props.match.minute}</p>}
+            {isLive && (
+              <p className="text-xs text-green-400">{props.match.minute}'</p>
+            )}
           </div>
         </div>
         {/* Borta lag */}
