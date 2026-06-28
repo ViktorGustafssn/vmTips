@@ -77,15 +77,9 @@ function Participants(props) {
         rightBonus++;
       if (pred.topScorer === bonusResults.topScorer && bonusResults.topScorer)
         rightBonus++;
-      if (
-        pred.mostGoalsTeam === bonusResults.mostGoalsTeam &&
-        bonusResults.mostGoalsTeam
-      )
+      if (bonusResults.mostGoalsTeam?.includes(pred.mostGoalsTeam))
         rightBonus++;
-      if (
-        pred.mostConcededTeam === bonusResults.mostConcededTeam &&
-        bonusResults.mostConcededTeam
-      )
+      if (bonusResults.mostConcededTeam?.includes(pred.mostConcededTeam))
         rightBonus++;
       if (
         pred.swedenGoals === bonusResults.swedenGoals &&
@@ -367,9 +361,9 @@ function Participants(props) {
                       <p className="font-semibold">Flest mål gruppspel: </p>
                       <p
                         className={
-                          predictions[player.name]?.mostGoalsTeam ===
-                            bonusResults.mostGoalsTeam &&
-                          bonusResults.mostGoalsTeam
+                          bonusResults.mostGoalsTeam?.includes(
+                            predictions[player.name]?.mostGoalsTeam,
+                          )
                             ? "text-green-500"
                             : "text-gray-400"
                         }
@@ -381,9 +375,9 @@ function Participants(props) {
                       <p className="font-semibold">Flest insläppta mål: </p>
                       <p
                         className={
-                          predictions[player.name]?.mostConcededTeam ===
-                            bonusResults.mostConcededTeam &&
-                          bonusResults.mostConcededTeam
+                          bonusResults.mostConcededTeam?.includes(
+                            predictions[player.name]?.mostConcededTeam,
+                          )
                             ? "text-green-500"
                             : "text-gray-400"
                         }

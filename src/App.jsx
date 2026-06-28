@@ -47,8 +47,9 @@ function App() {
     if (pred.worldChampion === bonusResults.worldChampion) points += 20;
     if (pred.bronzeWinner === bonusResults.bronzeWinner) points += 20;
     if (pred.topScorer === bonusResults.topScorer) points += 20;
-    if (pred.mostGoalsTeam === bonusResults.mostGoalsTeam) points += 10;
-    if (pred.mostConcededTeam === bonusResults.mostConcededTeam) points += 10;
+    if (bonusResults.mostGoalsTeam.includes(pred.mostGoalsTeam)) points += 10;
+    if (bonusResults.mostConcededTeam.includes(pred.mostConcededTeam))
+      points += 10;
     if (pred.swedenGoals === bonusResults.swedenGoals) points += 10;
     if (pred.fastestGoal === bonusResults.fastestGoal) points += 10;
 
