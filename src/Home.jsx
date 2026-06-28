@@ -20,7 +20,10 @@ function Home() {
       date: new Date("2026-06-20T19:00:00+02:00"),
       label: "Nederländerna - Sverige",
     },
-    { date: new Date("2026-06-26T01:00:00+02:00"), label: "Japan - Sverige" },
+    {
+      date: new Date("2026-06-30T23:00:00+02:00"),
+      label: "Frankrike - Sverige",
+    },
   ];
 
   useEffect(() => {
