@@ -86,6 +86,44 @@ function Home() {
         </h1>
         <div className="px-10 leading-relaxed text-gray-300">
           <p className="mb-4 text-center">
+            Gruppspelet är nu avgjort. Poängen är räknade men resultatet är
+            långt ifrån klart. Nu börjar de roliga... Slutspel! Vem har
+            egentligen varit bäst på att tippa i gruppspelet? Vi grottar ner oss
+            lite i statistiken
+          </p>
+          <strong>Mest Poäng</strong>
+          <p>Petter G - 277 poäng</p>
+          <br />
+          <strong>Flest korrekta resultat</strong>
+          <p>Per G - 13 stycken</p>
+          <br />
+          <strong>Flest korrekta mål</strong>
+          <p>Bertil G & Ida G - 55 stycken</p>
+          <br />
+          <strong>Flest korrekta tecken</strong>
+          <p>Petter G - 48 stycken</p>
+          <br />
+          <strong>Flesta korrekta bonusfrågor</strong>
+          <p>Johan W - 2 stycken</p>
+          <br />
+          <strong>Flest korrekta länder till 16-del</strong>
+          <p>28 stycken</p>
+          <p>Johan S</p>
+          <p>Peter V</p>
+          <p>Eva A</p>
+          <p>Peter L</p>
+          <br />
+          <strong>
+            Vem är favorit att ta hem det? Dom tre oddsfavoriterna enligt Kitte
+            Spel & Dobbel
+          </strong>
+          <p>Petter G - 1.95</p>
+          <p>Per G - 2.60</p>
+          <p>Johan S - 3.05</p>
+          <br />
+        </div>
+        <div className="px-10 leading-relaxed text-gray-300">
+          <p className="mb-4 text-center">
             Efter 8 års väntan är Sverige äntligen tillbaka i VM, och nu är det
             dags för oss att följa mästerskapet tillsammans! I årets upplaga är
             vi 24 tippare som ska göra upp om skryträtt, ära men framförallt
