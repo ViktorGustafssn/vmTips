@@ -4,6 +4,6 @@ export const bonusResults = {
   topScorer: "", //TODO fylls i när VM är klart
   mostGoalsTeam: ["Germany", "Netherlands", "France"],
   mostConcededTeam: ["Irak", "Tunisia"],
-  swedenGoals: null,
+  swedenGoals: 7,
   fastestGoal: "Germany",
 };
