@@ -1,5 +1,5 @@
 export const bonusResults = {
-  bronzeWinner: "England",
+  bronzeWinner: "",
   worldChampion: "",
   topScorer: "", //TODO fylls i när VM är klart
   mostGoalsTeam: ["Germany", "Netherlands", "France"],
