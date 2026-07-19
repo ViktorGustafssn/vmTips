@@ -85,213 +85,27 @@ function Home() {
           style={{ fontFamily: "Quicksand, sans-serif" }}
           className="font-bold text-3xl w-full text-center"
         >
-          Välkommen till Bergöns VM-tips 2026
+          Slutvisslan har gått!
         </h1>
         <div className="px-10 leading-relaxed text-gray-300">
-          <p className="mb-4 text-center">
-            Gruppspelet är nu avgjort. Poängen är räknade men resultatet är
-            långt ifrån klart. Nu börjar de roliga... Slutspel! Vem har
-            egentligen varit bäst på att tippa i gruppspelet? Vi grottar ner oss
-            lite i statistiken
+          <p className="mb-4 text-center"></p>
+          <p>Spanien har lyft pokalen.</p>
+          <p>Trumpen har skämt ut sig.</p>
+          <p>Mbappé har vunnit skytteligan.</p>
+          <p>
+            England har vunnit brons och Bergöns VM-tips har nått sitt slut...
           </p>
-          <strong>Mest Poäng</strong>
-          <p>Petter G - 277 poäng</p>
           <br />
-          <strong>Flest korrekta resultat</strong>
-          <p>Per G - 13 stycken</p>
+          <p>
+            Nu öppnar vi skumpan och gratulerar Bertil till vinsten av tipset
+            och vinstsumman av 2200kr, snyggt jobbat!
+          </p>
+          <p>2:a platsen har vi Petter, 1000kr rikare!</p>
+          <p>Sista pallplatsen går till Ida, 400kr kommer in på kontot.</p>
           <br />
-          <strong>Flest korrekta mål</strong>
-          <p>Bertil G & Ida G - 55 stycken</p>
-          <br />
-          <strong>Flest korrekta tecken</strong>
-          <p>Petter G - 48 stycken</p>
-          <br />
-          <strong>Flesta korrekta bonusfrågor</strong>
-          <p>Johan W - 2 stycken</p>
-          <br />
-          <strong>Flest korrekta länder till 16-del</strong>
-          <p>28 stycken</p>
-          <p>Johan S</p>
-          <p>Peter V</p>
-          <p>Eva A</p>
-          <p>Peter L</p>
-          <br />
-          <strong>
-            Vem är favorit att ta hem det? Dom tre oddsfavoriterna enligt Kitte
-            Spel & Dobbel
-          </strong>
-          <p>Petter G - 1.95</p>
-          <p>Per G - 2.60</p>
-          <p>Johan S - 3.05</p>
-          <br />
-        </div>
-        <div className="px-10 leading-relaxed text-gray-300">
-          <p className="mb-4 text-center">
-            Efter 8 års väntan är Sverige äntligen tillbaka i VM, och nu är det
-            dags för oss att följa mästerskapet tillsammans! I årets upplaga är
-            vi 24 tippare som ska göra upp om skryträtt, ära men framförallt
-            prispotten.
-          </p>
-
-          <p>1:a plats: 2200kr</p>
-          <p>2:a plats: 1000kr</p>
-          <p className="mb-4">3:e plats: 400kr</p>
-
-          <p className="mb-4">På hemsidan kommer du att hitta följande:</p>
-
-          <p className="mb-4">
-            <strong className="flex items-center gap-2">
-              - TOPPLISTAN <Trophy size={18} />
-            </strong>{" "}
-            - Följ kampen om förstaplatsen men även sistaplatsen.
-          </p>
-
-          <p className="mb-4">
-            <strong className="flex items-center gap-2">
-              - MATCHERNA <SoccerBallIcon size={18} />
-            </strong>{" "}
-            - Live, kommande och spelade matcher. Klicka dig in på matchen och
-            se vad alla har tippat för resultat.
-          </p>
-
-          <p className="mb-4">
-            <strong className="flex items-center gap-2">
-              - GÄSTBOKEN <ChatsCircleIcon size={18} />
-            </strong>{" "}
-            - Stället där diskussionerna förs. Berätta hur duktig du är på att
-            tippa eller hitta på dåliga bortförklaringar eller varför inte en
-            rolig kommentar? Här är stället du skriver för att nå alla.
-          </p>
-          <p className="mb-4">
-            <strong className="flex items-center gap-4">
-              - DELTAGARNA <UsersIcon size={18} />
-            </strong>{" "}
-            - Här kan du få tillgång till allas tippningar. Gå in och kika på
-            någon och förbättra ditt eget självförtroende
-          </p>
-        </div>
-        <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
-          <strong className="pb-4 text-lg">
-            En snabb sammanfattning om hur VM kommer att sluta om man ska tro på
-            dom tips som lämnats in.
-          </strong>
-          <ol className="flex flex-col gap-4">
-            <li>
-              • Mexico vinner premiärmatchen enligt 100%. 83,3 % tror att
-              Sydafrika gör 0 mål i den matchen.
-            </li>
-            <li>
-              • Alla är överens över att Sverige går vidare till slutspel.
-            </li>
-            <li>
-              • Störst seger hittar vi matchen Brasilien - Haiti som kommer
-              sluta 9-0.
-            </li>
-            <li>• Skyttekungen blir Mbappe enligt 41,7%</li>
-            <li>
-              • Norge ser ut att göra ett historiskt bra mästerskap. Norge till
-              kvartsfinal enligt 25%
-            </li>
-            <li>
-              • Favoriter till att bli världsmästare är Frankrike enligt 37,5%
-            </li>
-            <li>• 8,33% tror att Sverige gör en repris på VM 94</li>
-            <li>• 4,17% tror att Sverige vinner VM</li>
-          </ol>
-        </div>
-        <div className="flex flex-col items-start px-10 text-gray-300 leading-relaxed">
-          <p className="text-lg mb-4 font-bold mt-4">
-            Den officiella poängräkningen
-          </p>
-          <p className="mb-4 font-semibold">Samtliga matcher i gruppen</p>
-          <ol>
-            <li>
-              • Rätt antal mål per lag, <strong>2 poäng</strong>
-            </li>
-            <li>
-              • Rätt tecken (1X2), <strong>3 poäng</strong>
-            </li>
-            <li>
-              • <strong>7 poäng</strong> kan delas ut i samtliga matcher
-            </li>
-          </ol>
-
-          <p className="my-4 font-semibold">Slutspel:</p>
-          <ol>
-            <li>
-              • Rätt lag i sextondel, <strong>1 poäng</strong>/lag
-            </li>
-            <li>
-              • Rätt lag i åttondelsfinal, <strong>2 poäng</strong>/lag
-            </li>
-            <li>
-              • Rätt lag i kvartsfinal, <strong>4 poäng</strong>/lag
-            </li>
-            <li>
-              • Rätt lag i semifinal, <strong>6 poäng</strong>/lag
-            </li>
-            <li>
-              • Rätt lag I final, <strong>8 poäng</strong>/lag{" "}
-            </li>
-          </ol>
-
-          <p className="my-4 font-semibold">Bonusfrågor</p>
-
-          <ol>
-            <li>
-              • Skyttekung, <strong>20 poäng</strong>
-            </li>
-            <li>
-              • Världsmästare, <strong>20 poäng</strong>
-            </li>
-            <li>
-              • Vinnare bronsmatch, <strong>20 poäng</strong>
-            </li>
-            <li>
-              • Lag som gör mest mål i gruppspelet, <strong>10 poäng</strong>
-            </li>
-            <li>
-              • Lag som släpper in flest mål i gruppspelet,{" "}
-              <strong>10 poäng</strong>
-            </li>
-            <li>
-              • Hur många mål gör Sverige i VM (självmål räknas ej),{" "}
-              <strong>10 poäng</strong>
-            </li>
-            <li>
-              • Vilket land gör snabbaste målet i omgång 1,{" "}
-              <strong>10 poäng</strong>
-            </li>
-          </ol>
-          <p className="py-4 font-semibold">
-            Går du för full pott på det här tipset så kommer du få följande
-            poäng:
-          </p>
-          <ol>
-            <li>
-              • Gruppspelet <strong>504 poäng</strong>
-            </li>
-            <li>
-              • Sextondelsfinal <strong>32 poäng</strong>
-            </li>
-            <li>
-              • Åttondelsfinal <strong>32 poäng</strong>
-            </li>
-            <li>
-              • Kvartsfinal <strong>32 poäng</strong>
-            </li>
-            <li>
-              • Semifinal <strong>24 poäng</strong>
-            </li>
-            <li>
-              • Final <strong>16 poäng</strong>
-            </li>
-            <li>
-              • Bonusfrågor <strong>100 poäng</strong>
-            </li>
-          </ol>
-          <p className="py-4">
-            <strong>Totalt: </strong>740 poäng
+          <p>
+            Vi på Kitte Spel & Dobbel vill tacka alla deltagare och alla er som
+            hållit gästboken levande under mästerskapet!
           </p>
         </div>
       </div>
